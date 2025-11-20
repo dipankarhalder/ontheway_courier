@@ -29,6 +29,10 @@ const MESSAGES = {
     title: "OTP Verified!",
     description: "OTP matched successfully.",
   },
+  error: {
+    title: "Something has gone wrong.",
+    description: "You have entered the wrong otp",
+  },
 };
 
 const otpSchema = yup.object({
@@ -97,6 +101,15 @@ export const OtpVerificationPage = () => {
 
   const onSubmit = (data) => {
     console.log("OTP Submitted:", data);
+    if (data.otp !== "2246") {
+      addToast({
+        type: "error",
+        title: MESSAGES.error.title,
+        description: MESSAGES.error.description,
+      });
+      return;
+    }
+
     addToast({
       type: "success",
       title: MESSAGES.success.title,

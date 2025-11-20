@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 import { paths } from "../../../Constant";
 import { Button } from "../../../Shared/Button";
-import { Checkbox } from "../../../Shared/Checkbox";
 import { Logo } from "../../../Components/Common/Logo";
 import { EmailInput } from "../../../Components/Shared/FormElements/EmailInput";
 import { PasswordInput } from "../../../Components/Shared/FormElements/PasswordInput";
@@ -17,9 +16,7 @@ import {
   AppInsideSignin,
   AppHeadingSignin,
   AppFormSignin,
-  AppCheckField,
   AppBtnField,
-  AppLinkCover,
 } from "../style";
 
 const MESSAGES = {
@@ -31,8 +28,12 @@ const MESSAGES = {
     required: "Please provide a valid password.",
   },
   success: {
-    title: "Successfully Submitted",
+    title: "Successfully logged-in",
     description: "You are a authorized user.",
+  },
+  error: {
+    title: "Something has gone wrong.",
+    description: "You have entered the wrong email or password",
   },
 };
 
@@ -74,13 +75,21 @@ export const SigninPage = () => {
   ];
 
   const onSubmit = (data) => {
-    console.log("Form Data:", data);
+    if (data.email !== "admin@gmail.com" && data.password !== "admin#123") {
+      addToast({
+        type: "error",
+        title: MESSAGES.error.title,
+        description: MESSAGES.error.description,
+      });
+      return;
+    }
+
     addToast({
       type: "success",
       title: MESSAGES.success.title,
       description: MESSAGES.success.description,
     });
-    navigate(paths.OTP);
+    navigate(paths.APPS);
   };
 
   return (
@@ -89,7 +98,7 @@ export const SigninPage = () => {
         <Logo />
         <AppHeadingSignin>
           <h1>Welcome Back</h1>
-          <p>Nice to see you again, please enter your details</p>
+          <p>Always a pleasure to see you again.</p>
         </AppHeadingSignin>
         <AppFormSignin onSubmit={handleSubmit(onSubmit)} noValidate>
           {inputs.map((input) => {
@@ -103,22 +112,9 @@ export const SigninPage = () => {
               />
             );
           })}
-          <AppCheckField>
-            <Checkbox
-              id="remember"
-              name="remember"
-              label="Remember Me"
-              {...register("remember")}
-            />
-            <Link to={paths.FORGOT}>Forgot password?</Link>
-          </AppCheckField>
           <AppBtnField>
             <Button>Continue</Button>
           </AppBtnField>
-          <AppLinkCover>
-            <p>New to Arunodaya University?</p>
-            <Link to={paths.REGISTER}>Create an account</Link>
-          </AppLinkCover>
         </AppFormSignin>
       </AppInsideSignin>
     </AppSignin>

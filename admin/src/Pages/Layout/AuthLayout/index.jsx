@@ -3,7 +3,7 @@ import { AppMainCover, AppBgSec } from "./style";
 import { paths } from "../../../Constant";
 
 const backgroundMap = {
-  [paths.LOGIN]: "/authbg.png",
+  [paths.LOGIN]: "/authbg.webp",
   [`/${paths.REGISTER}`]: "/createbg.jpg",
   [`/${paths.OTP}`]: "/otpbg.webp",
   [`/${paths.FORGOT}`]: "/forgotbg.png",
