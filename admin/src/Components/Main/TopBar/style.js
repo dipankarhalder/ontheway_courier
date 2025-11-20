@@ -3,7 +3,7 @@ import { borderStyleColor, backgroundColor } from "../../../styles/mixins";
 
 export const AppMainTopCover = styled.div`
   display: flex;
-  width: calc(100% - 590px);
+  width: calc(100% - 520px);
   position: fixed;
   top: 0px;
   padding: 10px 24px;

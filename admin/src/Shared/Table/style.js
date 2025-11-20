@@ -18,7 +18,7 @@ export const TablePageHeading = styled.div`
   width: 100%;
 
   & > h1 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
   }
 `;
@@ -81,7 +81,7 @@ export const TableSearchInside = styled.div`
     box-sizing: border-box;
     width: auto;
     height: 32px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     padding: 0px 12px;
     background: #2da44e;
@@ -238,8 +238,20 @@ export const TableContainer = styled.div`
         border-bottom: 1px solid ${({ theme }) => theme.colors.tableborder};
 
         td {
-          font-size: 14px;
+          font-size: 15px;
+          font-weight: 600;
           padding: 0.5rem 1rem;
+
+          &.app_verify_actv > span,
+          &.app_verify_inactv > span {
+            width: 12px;
+            height: 12px;
+
+            & > svg {
+              width: 12px;
+              height: 12px;
+            }
+          }
 
           & > span.app_status_actv,
           & > span.app_status_inactv,
@@ -308,6 +320,23 @@ export const TableContainer = styled.div`
             color: ${({ theme }) => theme.colors.warning};
             background-color: ${({ theme }) => theme.colors.warningbg};
             border: 1px solid ${({ theme }) => theme.colors.warning};
+          }
+
+          & > span.user_type {
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 6px;
+
+            &.Customer {
+              color: ${({ theme }) => theme.colors.green};
+              background-color: ${({ theme }) => theme.colors.successbg};
+            }
+            &.Rider {
+              color: ${({ theme }) => theme.colors.info};
+              background-color: ${({ theme }) => theme.colors.infobg};
+            }
           }
 
           & > .app_share {

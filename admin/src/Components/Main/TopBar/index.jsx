@@ -1,32 +1,15 @@
-import { Info, Notification, Location, Darrow } from "../../../Shared/Icons";
-import { SelectBox } from "../../../Shared/SelectBox";
+import { Info, Notification } from "../../../Shared/Icons";
 import {
   AppMainTopCover,
-  AppLocationDropDown,
   AppLoginTime,
-  AppDropDownItem,
   AppMainLeftArea,
   AppMainRightArea,
 } from "./style";
 
-export const TopBar = ({ location }) => {
-  console.log(location);
-
+export const TopBar = () => {
   return (
     <AppMainTopCover>
       <AppMainLeftArea>
-        {/* <AppLocationDropDown>
-          <Location />
-          <AppDropDownItem>
-            <SelectBox
-              placeholder="Durgapur"
-              options={location}
-              name={"location_dropdown"}
-              id={"location_dropdown"}
-            />
-            <Darrow />
-          </AppDropDownItem>
-        </AppLocationDropDown> */}
         <AppLoginTime>
           <span>Last login: 23-04-2025, 12:30 PM</span>
         </AppLoginTime>
