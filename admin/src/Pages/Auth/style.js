@@ -3,7 +3,7 @@ import { textColor } from "../../styles/mixins";
 
 export const AppSignin = styled.div`
   display: flex;
-  width: 48%;
+  width: 35%;
   height: 100vh;
   justify-content: center;
   align-items: center;
