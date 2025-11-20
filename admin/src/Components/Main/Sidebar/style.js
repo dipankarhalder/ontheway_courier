@@ -10,17 +10,13 @@ import {
 export const AppSideBar = styled.div`
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 200px;
   height: 100vh;
   padding: 0px 20px 16px;
   overflow-y: auto;
   position: fixed;
   top: 0px;
   ${backgroundColor("white")};
-  background-image: url("/sidebar.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
   border-right: 1px solid ${({ theme }) => theme.colors.tableborder};
 `;
 
@@ -28,10 +24,11 @@ export const AppSidebarInside = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-top: 20px;
 
   & > span {
     display: flex;
-    width: 100px;
+    width: 120px;
     margin-bottom: 30px;
 
     & > svg {
@@ -44,7 +41,7 @@ export const AppSidebarInside = styled.div`
 export const AddNewCandidate = styled.div`
   display: flex;
   width: 100%;
-  margin-bottom: 3
+  margin-bottom: 3px;
   color: 0px;
 
   & > a {
@@ -85,6 +82,7 @@ export const AppSidebarLinkCover = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 30px;
 `;
 
 export const SidebarItem = styled.div`
@@ -161,8 +159,8 @@ export const SidebarLinkStyled = styled(Link)`
 
   p {
     margin: 0;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 24px;
     font-weight: 600;
     ${textColor("navText")};
     ${fontFamily};

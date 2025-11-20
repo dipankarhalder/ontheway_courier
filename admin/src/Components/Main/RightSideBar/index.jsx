@@ -105,56 +105,6 @@ export const RightSideBar = () => {
           </ul>
         </div>
       </div>
-      <div className="app_recent_activity">
-        <h2>
-          Recent Activities <Link href="/">more</Link>
-        </h2>
-        <div className="app_inside_recent_activity">
-          <ul>
-            <li>
-              <CrossTick />
-              <div className="app_list_activity">
-                <p>
-                  Student <b>Sarah Fatima</b> successfully registered for
-                  Advanced Calculus and Modern History for the upcoming
-                  semester.
-                </p>
-                <em>10 minutes age</em>
-              </div>
-            </li>
-            <li>
-              <CrossTick />
-              <div className="app_list_activity">
-                <p>
-                  Professor <b>Abhi Roy</b> submitted final grades for the
-                  course Environmental Science 101.
-                </p>
-                <em>24 minutes age</em>
-              </div>
-            </li>
-            <li>
-              <CrossTick />
-              <div className="app_list_activity">
-                <p>
-                  <b>IT Administrator</b> updated the profile information for
-                  the faculty director.
-                </p>
-                <em>46 minutes age</em>
-              </div>
-            </li>
-            <li>
-              <CrossTick />
-              <div className="app_list_activity">
-                <p>
-                  Student <b>Himadry R</b> successfully registered for Cyber
-                  Security for the upcoming semester.
-                </p>
-                <em>1 hour age</em>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
     </AppRightSideBar>
   );
 };

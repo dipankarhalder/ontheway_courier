@@ -23,15 +23,13 @@ export const TeachersPage = () => {
       id: item.id,
       image: item.image,
       name: item.name,
-      gender: item.gender,
-      sec: item.section,
-      subject: item.subject,
-      class: item.class,
-      status: item.mobile % 2 === 0 ? true : false,
-      dob: item.DOB,
       phone: item.mobile,
       email: item.email,
-      address: item.address,
+      gender: item.gender,
+      type_user: item.typeUser,
+      delivered: item.rideCount > 0 ? `${item.rideCount} items` : "",
+      rider_verified: item.riderVerified ? true : false,
+      city: `${item.address.city} - ${item.address.pin}`,
     }));
 
   const tableHeaders =
@@ -51,10 +49,8 @@ export const TeachersPage = () => {
       setVisibleColumns((prev) => ({
         ...prev,
         id: false,
-        sec: false,
-        dob: false,
+        email: false,
         gender: false,
-        address: false,
       }));
     };
 
@@ -70,19 +66,12 @@ export const TeachersPage = () => {
           pageTitle={"Manage Teachers"}
           pagePath={pagePaths}
           data={teacherTableData}
-          addTextItem={"Add New Teacher"}
+          addTextItem={"Add new user"}
           handleAddItems={handleAddItems}
-          sortableColumns={[
-            "id",
-            "name",
-            "gender",
-            "status",
-            "phone",
-            "subject",
-          ]}
+          sortableColumns={["id", "name", "phone"]}
           viewBtn={"name"}
-          enableStatus={true}
-          filterableColumns={["subject", "gender", "status", "class"]}
+          enableStatus={false}
+          filterableColumns={["rider_verified"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>
             setVisibleColumns((prev) => ({

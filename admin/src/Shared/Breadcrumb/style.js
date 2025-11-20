@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { textColor } from "../../styles/mixins";
 
 export const BreadcrumbNav = styled.nav`
-  font-size: 12px;
+  font-size: 13px;
   margin: 0;
 `;
 
