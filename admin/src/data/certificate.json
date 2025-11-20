@@ -1,0 +1,66 @@
+[
+  {
+    "student_id": "CS2023001",
+    "name": "Aarav Mehta",
+    "department": "Computer Science",
+    "certificates": [
+      {
+        "certificate_name": "Python Programming",
+        "issuing_organization": "Coursera",
+        "issue_date": "2024-05-15",
+        "valid_till": null
+      },
+      {
+        "certificate_name": "Data Structures & Algorithms",
+        "issuing_organization": "Udemy",
+        "issue_date": "2023-12-01",
+        "valid_till": null
+      }
+    ]
+  },
+  {
+    "student_id": "IT2023021",
+    "name": "Sneha Kapoor",
+    "department": "Information Technology",
+    "certificates": [
+      {
+        "certificate_name": "AWS Cloud Practitioner",
+        "issuing_organization": "Amazon",
+        "issue_date": "2024-03-10",
+        "valid_till": "2027-03-10"
+      }
+    ]
+  },
+  {
+    "student_id": "EC2023015",
+    "name": "Rohan Verma",
+    "department": "Electronics",
+    "certificates": [
+      {
+        "certificate_name": "Embedded Systems",
+        "issuing_organization": "NPTEL",
+        "issue_date": "2024-01-20",
+        "valid_till": null
+      }
+    ]
+  },
+  {
+    "student_id": "EE2023004",
+    "name": "Priya Singh",
+    "department": "Electrical",
+    "certificates": [
+      {
+        "certificate_name": "PLC Programming",
+        "issuing_organization": "Siemens",
+        "issue_date": "2023-11-18",
+        "valid_till": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "student_id": "ME2023008",
+    "name": "Karan Joshi",
+    "department": "Mechanical",
+    "certificates": []
+  }
+]

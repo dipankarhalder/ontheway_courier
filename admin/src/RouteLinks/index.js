@@ -1,0 +1,126 @@
+import {
+  Home,
+  Teams,
+  Appointment,
+  Report,
+  Taxes,
+  Doctor,
+  Profile,
+  LabText,
+  Patients,
+  TypeSample,
+  Settings,
+  Hostel,
+  Certificate,
+  Analysis,
+  Notice,
+  Authority,
+  Library,
+  Result,
+  Scholar,
+  Assignm,
+  Rupees,
+  Event,
+  Course,
+  Stocks,
+  Calender,
+  Teach,
+  Staff,
+  Location,
+  CheckPlus,
+} from "../Shared/Icons";
+import { paths } from "../Constant";
+
+const currentYear = new Date().getFullYear();
+
+export const sidebarLink = [
+  {
+    id: 1,
+    title: "Main Menus",
+    children: [
+      { id: 1, title: "Dashboard", path: paths.APPS, icon: Home },
+      { id: 2, title: "Analysis", path: paths.ANALYSIS, icon: Analysis },
+      {
+        id: 4,
+        title: `New Candidate - ${currentYear} `,
+        path: paths.NEWCAN,
+        icon: CheckPlus,
+      },
+      { id: 5, title: "Events", path: paths.EVENTS, icon: Event },
+      { id: 6, title: "Courses", path: paths.COURSES, icon: Course },
+      { id: 7, title: "Campus", path: paths.LOCATIONS, icon: Location },
+    ],
+  },
+  {
+    id: 2,
+    title: "Manage Organization",
+    children: [
+      {
+        id: 1,
+        title: "Authority & Committee",
+        path: paths.AUTH,
+        icon: Authority,
+      },
+      { id: 2, title: "Hostel", path: paths.HOSTEL, icon: Hostel },
+      { id: 3, title: "Laboratory", path: paths.LABORATORY, icon: LabText },
+      { id: 4, title: "Library", path: paths.LIBRARY, icon: Library },
+    ],
+  },
+  {
+    id: 3,
+    title: "Manage Internals",
+    children: [
+      { id: 1, title: "Teachers", path: paths.TEACHER, icon: Teach },
+      { id: 2, title: "Stuffs", path: paths.STUFF, icon: Staff },
+      { id: 3, title: "Human Resources", path: paths.HUMAN, icon: Patients },
+      {
+        id: 11,
+        title: "Payroll",
+        path: paths.ADMIN,
+        icon: Rupees,
+      },
+      {
+        id: 4,
+        title: "Study Materials",
+        path: paths.STUDYMAT,
+        icon: TypeSample,
+      },
+      { id: 5, title: "Schedules", path: paths.SCHEDULE, icon: Calender },
+      { id: 6, title: "Reports", path: paths.REPORT, icon: Report },
+      { id: 7, title: "Stock Store", path: paths.STOCK, icon: Stocks },
+      { id: 8, title: "Notice Board", path: paths.NOTICE, icon: Notice },
+      { id: 9, title: "Fees", path: paths.INVOICE, icon: Taxes },
+      { id: 10, title: "Placements", path: paths.CAREER, icon: Doctor },
+    ],
+  },
+  {
+    id: 4,
+    title: "Manage Students",
+    children: [
+      {
+        id: 1,
+        title: "Students",
+        path: paths.STUDENT,
+        icon: Teams,
+      },
+      { id: 2, title: "Assignments", path: paths.ASSIGN, icon: Assignm },
+      { id: 3, title: "Scholarships", path: paths.SCHOLAR, icon: Scholar },
+      { id: 4, title: "Results", path: paths.RESULT, icon: Result },
+      {
+        id: 5,
+        title: "Certificates",
+        path: paths.CERTIFICATE,
+        icon: Certificate,
+      },
+      { id: 7, title: "Attendance", path: paths.ATTENDANCE, icon: Appointment },
+    ],
+  },
+  {
+    id: 5,
+    title: "Manage Others",
+    children: [
+      { id: 1, title: "Settings", path: paths.SETTING, icon: Settings },
+      { id: 2, title: "My Profile", path: paths.PROFILE, icon: Profile },
+    ],
+  },
+];

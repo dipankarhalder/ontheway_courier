@@ -1,11 +1,9 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const { envConfig } = require('../config');
+const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const { envConfig } = require("../config");
 
 const saltNum = 10;
-const roles = ['super_admin', 'delivery', 'customer'];
-
 const UserSchema = new mongoose.Schema(
   {
     firstName: {
@@ -17,11 +15,6 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-    },
-    role: {
-      type: String,
-      enum: roles,
-      default: 'super_admin',
     },
     email: {
       type: String,
@@ -38,32 +31,15 @@ const UserSchema = new mongoose.Schema(
       required: true,
       minlength: 6,
     },
-    address: {
-      area: {
-        type: String,
-      },
-      landmark: {
-        type: String,
-      },
-      city: {
-        type: String,
-      },
-      state: {
-        type: String,
-      },
-      pincode: {
-        type: String,
-      },
-    },
   },
   {
     timestamps: true,
-  },
+  }
 );
 
 /* middleware to hash the password */
-UserSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
+UserSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
   try {
     const salt = await bcrypt.genSalt(saltNum);
     this.password = await bcrypt.hash(this.password, salt);
@@ -85,11 +61,10 @@ UserSchema.methods.comparePassword = async function (password) {
 /* generate JWT token */
 UserSchema.methods.generateAuthToken = function () {
   const payload = {
-    userid: this._id,
+    id: this._id,
     email: this.email,
     firstName: this.firstName,
     lastName: this.lastName,
-    role: this.role,
   };
 
   /* create token with secret key and expiration time */
@@ -98,4 +73,4 @@ UserSchema.methods.generateAuthToken = function () {
   });
 };
 
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model("User", UserSchema);

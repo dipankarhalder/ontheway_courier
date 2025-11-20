@@ -1,0 +1,134 @@
+[
+  {
+    "employeeId": "HR001",
+    "name": "Dr. Anita Kapoor",
+    "designation": "Professor",
+    "department": "Computer Science",
+    "joiningDate": "2015-07-01",
+    "email": "anita.kapoor@college.edu",
+    "phone": "9876543210",
+    "employmentType": "Full-Time",
+    "status": true
+  },
+  {
+    "employeeId": "HR002",
+    "name": "Mr. Ramesh Sharma",
+    "designation": "Administrative Officer",
+    "department": "Administration",
+    "joiningDate": "2018-01-15",
+    "email": "ramesh.sharma@college.edu",
+    "phone": "9876543211",
+    "employmentType": "Full-Time",
+    "status": true
+  },
+  {
+    "employeeId": "HR003",
+    "name": "Ms. Neha Singh",
+    "designation": "Assistant Professor",
+    "department": "English",
+    "joiningDate": "2020-06-10",
+    "email": "neha.singh@college.edu",
+    "phone": "9876543212",
+    "employmentType": "Part-Time",
+    "status": false
+  },
+  {
+    "employeeId": "HR004",
+    "name": "Dr. Mehul Shah",
+    "designation": "Professor",
+    "department": "Physics",
+    "joiningDate": "2012-09-05",
+    "email": "mehul.shah@college.edu",
+    "phone": "9876543213",
+    "employmentType": "Full-Time",
+    "status": false
+  },
+  {
+    "employeeId": "HR005",
+    "name": "Ms. Isha Jain",
+    "designation": "Lab Assistant",
+    "department": "Biology",
+    "joiningDate": "2019-02-20",
+    "email": "isha.jain@college.edu",
+    "phone": "9876543214",
+    "employmentType": "Contract",
+    "status": false
+  },
+  {
+    "employeeId": "HR006",
+    "name": "Prof. Kunal Arora",
+    "designation": "Lecturer",
+    "department": "Psychology",
+    "joiningDate": "2017-11-01",
+    "email": "kunal.arora@college.edu",
+    "phone": "9876543215",
+    "employmentType": "Full-Time",
+    "status": false
+  },
+  {
+    "employeeId": "HR007",
+    "name": "Mrs. Pooja Rao",
+    "designation": "Office Clerk",
+    "department": "Accounts",
+    "joiningDate": "2016-03-22",
+    "email": "pooja.rao@college.edu",
+    "phone": "9876543216",
+    "employmentType": "Full-Time",
+    "status": true
+  },
+  {
+    "employeeId": "HR008",
+    "name": "Dr. Sanjay Desai",
+    "designation": "Head of Department",
+    "department": "Chemistry",
+    "joiningDate": "2010-08-12",
+    "email": "sanjay.desai@college.edu",
+    "phone": "9876543217",
+    "employmentType": "Full-Time",
+    "status": true
+  },
+  {
+    "employeeId": "HR009",
+    "name": "Mr. Amit Verma",
+    "designation": "IT Support Engineer",
+    "department": "IT Services",
+    "joiningDate": "2021-05-10",
+    "email": "amit.verma@college.edu",
+    "phone": "9876543218",
+    "employmentType": "Contract",
+    "status": true
+  },
+  {
+    "employeeId": "HR010",
+    "name": "Dr. Sneha Rathi",
+    "designation": "Associate Professor",
+    "department": "Mathematics",
+    "joiningDate": "2014-07-25",
+    "email": "sneha.rathi@college.edu",
+    "phone": "9876543219",
+    "employmentType": "Full-Time",
+    "status": true
+  },
+  {
+    "employeeId": "HR011",
+    "name": "Mr. Rahul Khanna",
+    "designation": "Sports Coach",
+    "department": "Physical Education",
+    "joiningDate": "2019-12-05",
+    "email": "rahul.khanna@college.edu",
+    "phone": "9876543220",
+    "employmentType": "Part-Time",
+    "status": true
+  },
+  {
+    "employeeId": "HR012",
+    "name": "Ms. Vandana Rao",
+    "designation": "Librarian",
+    "department": "Library",
+    "joiningDate": "2013-04-18",
+    "email": "vandana.rao@college.edu",
+    "phone": "9876543221",
+    "employmentType": "Full-Time",
+    "status": false
+  }
+]

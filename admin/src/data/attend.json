@@ -1,0 +1,57 @@
+[
+  {
+    "student_id": "CS2023001",
+    "name": "Aarav Mehta",
+    "department": "Computer Science",
+    "semester": 5,
+    "attendance": [
+      { "date": "2025-07-01", "status": "Present" },
+      { "date": "2025-07-02", "status": "Present" },
+      { "date": "2025-07-03", "status": "Absent" }
+    ]
+  },
+  {
+    "student_id": "IT2023012",
+    "name": "Sneha Kapoor",
+    "department": "Information Technology",
+    "semester": 5,
+    "attendance": [
+      { "date": "2025-07-01", "status": "Leave" },
+      { "date": "2025-07-02", "status": "Present" },
+      { "date": "2025-07-03", "status": "Present" }
+    ]
+  },
+  {
+    "student_id": "EC2023015",
+    "name": "Rohan Verma",
+    "department": "Electronics",
+    "semester": 5,
+    "attendance": [
+      { "date": "2025-07-01", "status": "Present" },
+      { "date": "2025-07-02", "status": "Absent" },
+      { "date": "2025-07-03", "status": "Present" }
+    ]
+  },
+  {
+    "student_id": "EE2023017",
+    "name": "Priya Singh",
+    "department": "Electrical",
+    "semester": 5,
+    "attendance": [
+      { "date": "2025-07-01", "status": "Present" },
+      { "date": "2025-07-02", "status": "Present" },
+      { "date": "2025-07-03", "status": "Present" }
+    ]
+  },
+  {
+    "student_id": "CV2023009",
+    "name": "Meera Nair",
+    "department": "Civil",
+    "semester": 5,
+    "attendance": [
+      { "date": "2025-07-01", "status": "Absent" },
+      { "date": "2025-07-02", "status": "Present" },
+      { "date": "2025-07-03", "status": "Leave" }
+    ]
+  }
+]
