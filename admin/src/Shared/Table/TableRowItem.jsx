@@ -1,5 +1,5 @@
 import React from "react";
-import { Share, Edit, Delete, GreenTick, CheckPlus } from "../Icons";
+import { Share, Edit, Delete, GreenTick, GrayTick, CheckPlus } from "../Icons";
 import { ActionTableButton } from "./style";
 
 export const TableRowItem = React.memo(
@@ -23,7 +23,7 @@ export const TableRowItem = React.memo(
             onChange={() => onToggleRow(item.id)}
           />
         </td>
-        {dataTableInfo.map((key) => {
+        {dataTableInfo.map((key, idx) => {
           if (!visibleColumns[key]) return null;
 
           if (key === "status") {
@@ -36,6 +36,38 @@ export const TableRowItem = React.memo(
                 >
                   {item[key] ? "Active" : "In-active"}
                 </span>
+              </td>
+            );
+          }
+
+          if (key === "rider_verified") {
+            const typeUser = item["type_user"];
+            const hasRider = typeUser.includes("Rider");
+            if (!hasRider) {
+              return (
+                <td key={`${key}-${idx}`} className="app_verify_inactv"></td>
+              );
+            }
+
+            const isVerified = item[key] === true;
+            return (
+              <td
+                key={`${key}-${idx}`}
+                className={isVerified ? "app_verify_actv" : "app_verify_inactv"}
+              >
+                {isVerified ? <GreenTick /> : <GrayTick />}
+              </td>
+            );
+          }
+
+          if (key === "type_user") {
+            return (
+              <td key={key}>
+                {item[key].map((itm, idx) => (
+                  <span className={`user_type ${itm}`} key={idx}>
+                    {itm}
+                  </span>
+                ))}
               </td>
             );
           }

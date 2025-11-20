@@ -1,12 +1,12 @@
 import { useLocation, Link } from "react-router-dom";
 import { Logo } from "../../Common/Logo";
 import { sidebarLink } from "../../../RouteLinks";
-import { paths } from "../../../Constant";
+// import { paths } from "../../../Constant";
 import {
   AppSideBar,
   AppSidebarInside,
   AppSidebarLinkCover,
-  AddNewCandidate,
+  // AddNewCandidate,/''
   SidebarItem,
   SidebarTitle,
   SidebarList,
@@ -29,12 +29,12 @@ export const Sidebar = () => {
     <AppSideBar>
       <AppSidebarInside>
         <Logo />
-        <AddNewCandidate>
+        {/* <AddNewCandidate>
           <Link to={paths.ADMISSION}>
             <Plus />
             <p>New Admission</p>
           </Link>
-        </AddNewCandidate>
+        </AddNewCandidate> */}
         <AppSidebarLinkCover>
           {sidebarLink.map((item) => {
             const sectionIsActive = item.children?.some(({ path }) => {
