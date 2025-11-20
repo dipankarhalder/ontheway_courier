@@ -1,0 +1,20 @@
+[
+  {
+    "id": "AUL1",
+    "location_name": "Arunodaya University, Itanagar",
+    "location_address": "Lekhi Village, Naharlagun, Itanagar, Dist. Papum Pare, AP - 791110",
+    "contact_no": "09076601322",
+    "tollfree": "1800-123-6223",
+    "email": "contact@arunodayauniversity.ac.in",
+    "status": true
+  },
+  {
+    "id": "AUL2",
+    "location_name": "Arunodaya University, Mumbai",
+    "location_address": "Lekhi Village, Itanagar, Dist. Papum Pare, AP - 791112",
+    "contact_no": "09076601323",
+    "tollfree": "1800-123-6224",
+    "email": "contact@arunodayauniversity.com",
+    "status": true
+  }
+]

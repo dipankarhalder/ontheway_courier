@@ -1,0 +1,272 @@
+[
+  {
+    "courseId": "MGT101",
+    "courseName": "Data Structures and Algorithms",
+    "credits": 3,
+    "instructor": "Dr. Anita Kapoor",
+    "semester": "Fall 2025",
+    "image": "/ap1.jpg",
+    "department": "Computer Science"
+  },
+  {
+    "courseId": "MGT102",
+    "courseName": "Computer Architecture",
+    "credits": 4,
+    "instructor": "Prof. Ravi Mehra",
+    "semester": "Fall 2025",
+    "image": "/ap2.avif",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "MGT103",
+    "courseName": "Operating Systems",
+    "credits": 3,
+    "instructor": "Dr. Sneha Rathi",
+    "semester": "Spring 2026",
+    "image": "/ap1.jpg",
+    "department": "Computer Science"
+  },
+  {
+    "courseId": "MGT104",
+    "courseName": "Database Management System",
+    "credits": 4,
+    "instructor": "Dr. Sanjay Desai",
+    "semester": "Fall 2025",
+    "image": "/ap2.avif",
+    "department": "Computer Science"
+  },
+  {
+    "courseId": "MGT105",
+    "courseName": "Object-Oriented Programming",
+    "credits": 3,
+    "instructor": "Prof. Neha Singh",
+    "semester": "Spring 2026",
+    "image": "/ap1.jpg",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "MGT106",
+    "courseName": "Computer Networks",
+    "credits": 2,
+    "instructor": "Dr. Mehul Shah",
+    "semester": "Fall 2025",
+    "image": "/ap2.avif",
+    "department": "Computer Science"
+  },
+  {
+    "courseId": "MGT107",
+    "courseName": "Distributed Systems",
+    "credits": 3,
+    "instructor": "Prof. Vandana Rao",
+    "semester": "Spring 2026",
+    "image": "/ap1.jpg",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "MGT108",
+    "courseName": "Artificial Intelligence",
+    "credits": 4,
+    "instructor": "Dr. Rajeev Joshi",
+    "semester": "Fall 2025",
+    "image": "/ap2.avif",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "MGT109",
+    "courseName": "Machine Learning",
+    "credits": 3,
+    "instructor": "Dr. Alka Bedi",
+    "semester": "Spring 2026",
+    "image": "/ap2.avif",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "MGT110",
+    "courseName": "Cognitive Computing",
+    "credits": 3,
+    "instructor": "Prof. Kunal Arora",
+    "semester": "Fall 2025",
+    "image": "/ap2.avif",
+    "department": "Computer Science"
+  },
+  {
+    "courseId": "MGT111",
+    "courseName": "Natural Language Processing",
+    "credits": 2,
+    "instructor": "Dr. Nisha Sood",
+    "semester": "Spring 2026",
+    "image": "/ap1.jpg",
+    "department": "Computer Science"
+  },
+  {
+    "courseId": "MGT112",
+    "courseName": "Cybersecurity",
+    "credits": 3,
+    "instructor": "Prof. Isha Jain",
+    "semester": "Fall 2025",
+    "image": "/ap1.jpg",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "MGT113",
+    "courseName": "Data Visualization",
+    "credits": 3,
+    "instructor": "Dr. Vikram Chauhan",
+    "semester": "Spring 2026",
+    "image": "/ap2.avif",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "MGT114",
+    "courseName": "Agile Software Development",
+    "credits": 4,
+    "instructor": "Prof. Ramesh Patel",
+    "semester": "Fall 2025",
+    "image": "/ap1.jpg",
+    "department": "Computer Applications"
+  },
+  {
+    "courseId": "ART201",
+    "courseName": "History of Modern Art",
+    "credits": 3,
+    "instructor": "Dr. Meera Nanda",
+    "semester": "Spring 2026",
+    "image": "/art1.jpg",
+    "department": "Arts"
+  },
+  {
+    "courseId": "ART202",
+    "courseName": "English Literature",
+    "credits": 3,
+    "instructor": "Prof. Rahul Bhatt",
+    "semester": "Fall 2025",
+    "image": "/art2.jpg",
+    "department": "Arts"
+  },
+  {
+    "courseId": "COM301",
+    "courseName": "Microeconomics",
+    "credits": 3,
+    "instructor": "Dr. Suman Verma",
+    "semester": "Spring 2026",
+    "image": "/com1.jpg",
+    "department": "Commerce"
+  },
+  {
+    "courseId": "COM302",
+    "courseName": "Financial Accounting",
+    "credits": 4,
+    "instructor": "Prof. Aakash Singh",
+    "semester": "Fall 2025",
+    "image": "/com2.jpg",
+    "department": "Commerce"
+  },
+  {
+    "courseId": "SCI401",
+    "courseName": "Physics - Mechanics",
+    "credits": 3,
+    "instructor": "Dr. Arvind Rao",
+    "semester": "Spring 2026",
+    "image": "/sci1.jpg",
+    "department": "Science"
+  },
+  {
+    "courseId": "SCI402",
+    "courseName": "Organic Chemistry",
+    "credits": 3,
+    "instructor": "Prof. Kalpana Joshi",
+    "semester": "Fall 2025",
+    "image": "/sci2.jpg",
+    "department": "Science"
+  },
+  {
+    "courseId": "BSC501",
+    "courseName": "Genetics and Molecular Biology",
+    "credits": 4,
+    "instructor": "Dr. Nitin Agarwal",
+    "semester": "Spring 2026",
+    "image": "/bsc1.jpg",
+    "department": "B.Sc"
+  },
+  {
+    "courseId": "BSC502",
+    "courseName": "Analytical Chemistry",
+    "credits": 3,
+    "instructor": "Prof. Harshita Rana",
+    "semester": "Fall 2025",
+    "image": "/bsc2.jpg",
+    "department": "B.Sc"
+  },
+  {
+    "courseId": "BCM601",
+    "courseName": "Business Economics",
+    "credits": 3,
+    "instructor": "Dr. Rishi Deshpande",
+    "semester": "Spring 2026",
+    "image": "/bcom1.jpg",
+    "department": "B.Com"
+  },
+  {
+    "courseId": "BCM602",
+    "courseName": "Corporate Finance",
+    "credits": 4,
+    "instructor": "Prof. Manish Kapoor",
+    "semester": "Fall 2025",
+    "image": "/bcom2.jpg",
+    "department": "B.Com"
+  },
+  {
+    "courseId": "ART203",
+    "courseName": "Modern World History",
+    "credits": 3,
+    "instructor": "Dr. Kavita Sharma",
+    "semester": "Spring 2026",
+    "image": "/art3.jpg",
+    "department": "Arts"
+  },
+  {
+    "courseId": "COM303",
+    "courseName": "Cost Accounting",
+    "credits": 3,
+    "instructor": "Prof. Dev Patel",
+    "semester": "Fall 2025",
+    "image": "/com3.jpg",
+    "department": "Commerce"
+  },
+  {
+    "courseId": "SCI403",
+    "courseName": "Quantum Physics",
+    "credits": 4,
+    "instructor": "Dr. Nandita Verma",
+    "semester": "Spring 2026",
+    "image": "/sci3.jpg",
+    "department": "Science"
+  },
+  {
+    "courseId": "BSC503",
+    "courseName": "Environmental Biology",
+    "credits": 2,
+    "instructor": "Prof. Anjali Gupta",
+    "semester": "Fall 2025",
+    "image": "/bsc3.jpg",
+    "department": "B.Sc"
+  },
+  {
+    "courseId": "ART204",
+    "courseName": "Psychology of Learning",
+    "credits": 3,
+    "instructor": "Dr. Reena Malhotra",
+    "semester": "Spring 2026",
+    "image": "/art4.jpg",
+    "department": "Arts"
+  },
+  {
+    "courseId": "COM304",
+    "courseName": "Econometrics",
+    "credits": 4,
+    "instructor": "Dr. Yash Jain",
+    "semester": "Fall 2025",
+    "image": "/com4.jpg",
+    "department": "Commerce"
+  }
+]

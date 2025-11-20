@@ -1,0 +1,116 @@
+import styled from "styled-components";
+import { textColor } from "../../styles/mixins";
+
+export const AppSignin = styled.div`
+  display: flex;
+  width: 48%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+`;
+
+export const AppInsideSignin = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+
+  & > span.app_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    & > img {
+      width: 160px;
+      height: auto;
+    }
+  }
+`;
+
+export const AppHeadingSignin = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  h1 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+
+  & > p {
+    font-size: 14px;
+    text-align: center;
+    ${textColor("bodytext")};
+  }
+`;
+
+export const AppFormSignin = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+`;
+
+export const AppCheckField = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & > a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    ${textColor("blue")};
+  }
+`;
+
+export const AppBtnField = styled.div`
+  margin: 26px 0 60px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+`;
+
+export const AppLinkCover = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  & > p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  & > a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    ${textColor("blue")};
+  }
+`;
+
+export const AppOtpField = styled.div`
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+
+  input {
+    width: 44px;
+    padding: 0px;
+    text-align: center;
+  }
+`;
+
+export const AppOtpErrorMessage = styled.span`
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0px;
+  display: block;
+  ${textColor("error")};
+`;

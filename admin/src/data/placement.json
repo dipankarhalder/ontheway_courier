@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Mehta",
+    "department": "Computer Science",
+    "company": "Google",
+    "package_lpa": 45,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 2,
+    "name": "Sneha Kapoor",
+    "department": "Information Technology",
+    "company": "Microsoft",
+    "package_lpa": 30,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Verma",
+    "department": "Electronics",
+    "company": "Intel",
+    "package_lpa": 18,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 4,
+    "name": "Priya Singh",
+    "department": "Electrical",
+    "company": "Siemens",
+    "package_lpa": 12,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 5,
+    "name": "Karan Joshi",
+    "department": "Mechanical",
+    "company": "Bosch",
+    "package_lpa": 10,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 6,
+    "name": "Meera Nair",
+    "department": "Civil",
+    "company": "L&T",
+    "package_lpa": 9,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 7,
+    "name": "Dev Sharma",
+    "department": "Computer Science",
+    "company": "Amazon",
+    "package_lpa": 28,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 8,
+    "name": "Tanya Rao",
+    "department": "Electronics",
+    "company": "Qualcomm",
+    "package_lpa": 22,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 9,
+    "name": "Aditya Malhotra",
+    "department": "IT",
+    "company": "Infosys",
+    "package_lpa": 6,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 10,
+    "name": "Simran Kaur",
+    "department": "Computer Science",
+    "company": "Capgemini",
+    "package_lpa": 5.5,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 11,
+    "name": "Ankit Dubey",
+    "department": "Mechanical",
+    "company": null,
+    "package_lpa": null,
+    "placement_status": "Not Placed"
+  },
+  {
+    "id": 12,
+    "name": "Neha Desai",
+    "department": "Civil",
+    "company": null,
+    "package_lpa": null,
+    "placement_status": "Not Placed"
+  },
+  {
+    "id": 13,
+    "name": "Ishaan Thakur",
+    "department": "Electrical",
+    "company": "ABB",
+    "package_lpa": 11,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 14,
+    "name": "Ritika Banerjee",
+    "department": "Computer Science",
+    "company": "Adobe",
+    "package_lpa": 26,
+    "placement_status": "Placed"
+  },
+  {
+    "id": 15,
+    "name": "Amit Patel",
+    "department": "IT",
+    "company": "TCS",
+    "package_lpa": 6.5,
+    "placement_status": "Placed"
+  }
+]

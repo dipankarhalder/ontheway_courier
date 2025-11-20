@@ -1,0 +1,128 @@
+[
+  {
+    "student_id": "CS2023001",
+    "name": "Aarav Mehta",
+    "department": "Computer Science",
+    "scholarship_name": "Merit-based Scholarship",
+    "amount": 50000,
+    "award_year": 2024,
+    "status": "Granted"
+  },
+  {
+    "student_id": "IT2023010",
+    "name": "Sneha Kapoor",
+    "department": "Information Technology",
+    "scholarship_name": "Tech Excellence Grant",
+    "amount": 40000,
+    "award_year": 2024,
+    "status": "Granted"
+  },
+  {
+    "student_id": "EC2023023",
+    "name": "Rohan Verma",
+    "department": "Electronics",
+    "scholarship_name": "Need-based Aid",
+    "amount": 30000,
+    "award_year": 2024,
+    "status": "Granted"
+  },
+  {
+    "student_id": "EE2023017",
+    "name": "Priya Singh",
+    "department": "Electrical",
+    "scholarship_name": "Women in Engineering",
+    "amount": 45000,
+    "award_year": 2023,
+    "status": "Granted"
+  },
+  {
+    "student_id": "ME2023004",
+    "name": "Karan Joshi",
+    "department": "Mechanical",
+    "scholarship_name": "Academic Excellence Fund",
+    "amount": 20000,
+    "award_year": 2024,
+    "status": "Pending"
+  },
+  {
+    "student_id": "CV2023008",
+    "name": "Meera Nair",
+    "department": "Civil",
+    "scholarship_name": "Social Welfare Grant",
+    "amount": 25000,
+    "award_year": 2024,
+    "status": "Granted"
+  },
+  {
+    "student_id": "CS2023002",
+    "name": "Dev Sharma",
+    "department": "Computer Science",
+    "scholarship_name": "Merit-based Scholarship",
+    "amount": 50000,
+    "award_year": 2023,
+    "status": "Granted"
+  },
+  {
+    "student_id": "IT2023011",
+    "name": "Tanya Rao",
+    "department": "Information Technology",
+    "scholarship_name": "AI Talent Scholarship",
+    "amount": 60000,
+    "award_year": 2024,
+    "status": "Granted"
+  },
+  {
+    "student_id": "EC2023015",
+    "name": "Aditya Malhotra",
+    "department": "Electronics",
+    "scholarship_name": "Merit-based Scholarship",
+    "amount": 40000,
+    "award_year": 2023,
+    "status": "Granted"
+  },
+  {
+    "student_id": "CS2023003",
+    "name": "Simran Kaur",
+    "department": "Computer Science",
+    "scholarship_name": "Tech Inclusion Grant",
+    "amount": 35000,
+    "award_year": 2024,
+    "status": "Pending"
+  },
+  {
+    "student_id": "EE2023019",
+    "name": "Ishaan Thakur",
+    "department": "Electrical",
+    "scholarship_name": "Innovation in Power Award",
+    "amount": 55000,
+    "award_year": 2024,
+    "status": "Granted"
+  },
+  {
+    "student_id": "CV2023007",
+    "name": "Neha Desai",
+    "department": "Civil",
+    "scholarship_name": "Women in STEM Scholarship",
+    "amount": 48000,
+    "award_year": 2023,
+    "status": "Granted"
+  },
+  {
+    "student_id": "CS2023005",
+    "name": "Ritika Banerjee",
+    "department": "Computer Science",
+    "scholarship_name": "Merit-based Scholarship",
+    "amount": 50000,
+    "award_year": 2024,
+    "status": "Granted"
+  },
+  {
+    "student_id": "IT2023012",
+    "name": "Amit Patel",
+    "department": "Information Technology",
+    "scholarship_name": "Digital India Scholarship",
+    "amount": 42000,
+    "award_year": 2024,
+    "status": "Granted"
+  }
+]

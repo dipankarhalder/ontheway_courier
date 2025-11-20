@@ -1,0 +1,202 @@
+[
+  {
+    "item_id": "L001",
+    "item_name": "Hydrochloric Acid",
+    "type": "Liquid",
+    "stock_quantity": "500ml",
+    "expiry_date": "2026-03-15",
+    "assigned_class": "B.Sc",
+    "teacher_name": "Mr. Alan Grant",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L002",
+    "item_name": "Sodium Chloride",
+    "type": "Solid",
+    "stock_quantity": "2kg",
+    "expiry_date": "2027-01-01",
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mrs. Lucie Smith",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L003",
+    "item_name": "Microscope",
+    "type": "Equipment",
+    "stock_quantity": "10 units",
+    "expiry_date": null,
+    "assigned_class": "B.Sc",
+    "teacher_name": "Dr. Susan Ray",
+    "lab_section": "Biology"
+  },
+  {
+    "item_id": "L004",
+    "item_name": "Copper Sulfate",
+    "type": "Solid",
+    "stock_quantity": "1kg",
+    "expiry_date": "2026-09-12",
+    "assigned_class": "B.Sc",
+    "teacher_name": "Mr. Alan Grant",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L005",
+    "item_name": "Thermometer",
+    "type": "Equipment",
+    "stock_quantity": "15 units",
+    "expiry_date": null,
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mr. Neil Adams",
+    "lab_section": "Physics"
+  },
+  {
+    "item_id": "L006",
+    "item_name": "Ammonia Solution",
+    "type": "Liquid",
+    "stock_quantity": "300ml",
+    "expiry_date": "2026-12-10",
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mrs. Lucie Smith",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L007",
+    "item_name": "Beaker Set",
+    "type": "Equipment",
+    "stock_quantity": "20 units",
+    "expiry_date": null,
+    "assigned_class": "B.Sc",
+    "teacher_name": "Mr. Alan Grant",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L008",
+    "item_name": "Zinc Granules",
+    "type": "Solid",
+    "stock_quantity": "500g",
+    "expiry_date": "2025-11-01",
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mrs. Lucie Smith",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L009",
+    "item_name": "Dissecting Kit",
+    "type": "Equipment",
+    "stock_quantity": "8 units",
+    "expiry_date": null,
+    "assigned_class": "B.Sc",
+    "teacher_name": "Dr. Susan Ray",
+    "lab_section": "Biology"
+  },
+  {
+    "item_id": "L010",
+    "item_name": "Hydrogen Peroxide",
+    "type": "Liquid",
+    "stock_quantity": "250ml",
+    "expiry_date": "2025-12-31",
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mr. Alan Grant",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L011",
+    "item_name": "Spring Balance",
+    "type": "Equipment",
+    "stock_quantity": "5 units",
+    "expiry_date": null,
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mr. Neil Adams",
+    "lab_section": "Physics"
+  },
+  {
+    "item_id": "L012",
+    "item_name": "Sulfuric Acid",
+    "type": "Liquid",
+    "stock_quantity": "400ml",
+    "expiry_date": "2026-05-10",
+    "assigned_class": "B.Sc",
+    "teacher_name": "Mrs. Lucie Smith",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L013",
+    "item_name": "Glass Slides",
+    "type": "Equipment",
+    "stock_quantity": "200 units",
+    "expiry_date": null,
+    "assigned_class": "B.Sc",
+    "teacher_name": "Dr. Susan Ray",
+    "lab_section": "Biology"
+  },
+  {
+    "item_id": "L014",
+    "item_name": "Ethanol",
+    "type": "Liquid",
+    "stock_quantity": "600ml",
+    "expiry_date": "2026-10-10",
+    "assigned_class": "B.Sc",
+    "teacher_name": "Mr. Alan Grant",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L015",
+    "item_name": "Iron Nails",
+    "type": "Solid",
+    "stock_quantity": "1.5kg",
+    "expiry_date": "2027-02-05",
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mrs. Lucie Smith",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L016",
+    "item_name": "Newton’s Cradle",
+    "type": "Equipment",
+    "stock_quantity": "3 units",
+    "expiry_date": null,
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mr. Neil Adams",
+    "lab_section": "Physics"
+  },
+  {
+    "item_id": "L017",
+    "item_name": "Bunsen Burner",
+    "type": "Equipment",
+    "stock_quantity": "10 units",
+    "expiry_date": null,
+    "assigned_class": "B.Sc",
+    "teacher_name": "Mr. Alan Grant",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L018",
+    "item_name": "Glucose Solution",
+    "type": "Liquid",
+    "stock_quantity": "750ml",
+    "expiry_date": "2025-10-25",
+    "assigned_class": "M.Sc",
+    "teacher_name": "Dr. Susan Ray",
+    "lab_section": "Biology"
+  },
+  {
+    "item_id": "L019",
+    "item_name": "Test Tubes",
+    "type": "Equipment",
+    "stock_quantity": "100 units",
+    "expiry_date": null,
+    "assigned_class": "B.Sc",
+    "teacher_name": "Mr. Alan Grant",
+    "lab_section": "Chemistry"
+  },
+  {
+    "item_id": "L020",
+    "item_name": "Nitric Acid",
+    "type": "Liquid",
+    "stock_quantity": "300ml",
+    "expiry_date": "2026-07-20",
+    "assigned_class": "M.Sc",
+    "teacher_name": "Mrs. Lucie Smith",
+    "lab_section": "Chemistry"
+  }
+]

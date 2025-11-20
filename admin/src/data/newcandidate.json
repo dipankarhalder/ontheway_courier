@@ -1,0 +1,137 @@
+[
+  {
+    "id": "ADM001",
+    "name": "Aarav Sharma",
+    "age": 18,
+    "gender": "Male",
+    "admission_date": "2025-07-15",
+    "course": "Bachelor of Computer Applications",
+    "contact": "9876543210"
+  },
+  {
+    "id": "ADM002",
+    "name": "Priya Mehta",
+    "age": 19,
+    "gender": "Female",
+    "admission_date": "2025-07-16",
+    "course": "Master of Science (IT)",
+    "contact": "9123456789"
+  },
+  {
+    "id": "ADM003",
+    "name": "Kunal Verma",
+    "age": 20,
+    "gender": "Male",
+    "admission_date": "2025-07-17",
+    "course": "Bachelor of Science (IT)",
+    "contact": "9345678123"
+  },
+  {
+    "id": "ADM004",
+    "name": "Sneha Iyer",
+    "age": 18,
+    "gender": "Female",
+    "admission_date": "2025-07-18",
+    "course": "Master of Science (IT)",
+    "contact": "9001234567"
+  },
+  {
+    "id": "ADM005",
+    "name": "Rohan Desai",
+    "age": 21,
+    "gender": "Male",
+    "admission_date": "2025-07-19",
+    "course": "Library Science",
+    "contact": "8887654321"
+  },
+  {
+    "id": "ADM006",
+    "name": "Neha Kapoor",
+    "age": 22,
+    "gender": "Female",
+    "admission_date": "2025-07-20",
+    "course": "Master of Social Work",
+    "contact": "9012345678"
+  },
+  {
+    "id": "ADM007",
+    "name": "Tanmay Joshi",
+    "age": 18,
+    "gender": "Male",
+    "admission_date": "2025-07-21",
+    "course": "Master of Science",
+    "contact": "9988776655"
+  },
+  {
+    "id": "ADM008",
+    "name": "Ananya Sen",
+    "age": 19,
+    "gender": "Female",
+    "admission_date": "2025-07-22",
+    "course": "Bachelor of Business Administrator",
+    "contact": "8765432109"
+  },
+  {
+    "id": "ADM009",
+    "name": "Manav Gill",
+    "age": 20,
+    "gender": "Male",
+    "admission_date": "2025-07-23",
+    "course": "Bachelor of Management Studies",
+    "contact": "8324567890"
+  },
+  {
+    "id": "ADM010",
+    "name": "Isha Batra",
+    "age": 21,
+    "gender": "Female",
+    "admission_date": "2025-07-24",
+    "course": "BBA of Tourism & Hospitality Management",
+    "contact": "8201345789"
+  },
+  {
+    "id": "ADM011",
+    "name": "Yash Rajput",
+    "age": 22,
+    "gender": "Male",
+    "admission_date": "2025-07-25",
+    "course": "Bachelor of Business Administrator",
+    "contact": "9090909090"
+  },
+  {
+    "id": "ADM012",
+    "name": "Meera Das",
+    "age": 20,
+    "gender": "Female",
+    "admission_date": "2025-07-26",
+    "course": "MBA - Dual Specialization",
+    "contact": "8008008008"
+  },
+  {
+    "id": "ADM013",
+    "name": "Aditya Malhotra",
+    "age": 19,
+    "gender": "Male",
+    "admission_date": "2025-07-27",
+    "course": "Master of Social Work",
+    "contact": "8112233445"
+  },
+  {
+    "id": "ADM014",
+    "name": "Ritika Sinha",
+    "age": 18,
+    "gender": "Female",
+    "admission_date": "2025-07-28",
+    "course": "Bachelor of Management Studies",
+    "contact": "8223344556"
+  },
+  {
+    "id": "ADM015",
+    "name": "Siddharth Nair",
+    "age": 21,
+    "gender": "Male",
+    "admission_date": "2025-07-29",
+    "course": "Executive MBA",
+    "contact": "8334455667"
+  }
+]

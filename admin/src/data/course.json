@@ -1,0 +1,128 @@
+[
+  {
+    "courseId": "MGT101",
+    "courseName": "Bachelor of Computer Science",
+    "credits": 3,
+    "instructor": "Dr. Anita Kapoor",
+    "semester": "Fall 2025",
+    "image": "/book-1.png",
+    "department": "Business Administration"
+  },
+  {
+    "courseId": "MGT102",
+    "courseName": "Master of Computer Science",
+    "credits": 4,
+    "instructor": "Prof. Ravi Mehra",
+    "semester": "Fall 2025",
+    "image": "/book-2.png",
+    "department": "Human Resources"
+  },
+  {
+    "courseId": "MGT103",
+    "courseName": "Bachelor of Science",
+    "credits": 3,
+    "instructor": "Dr. Sneha Rathi",
+    "semester": "Spring 2026",
+    "image": "/book-3.png",
+    "department": "Marketing"
+  },
+  {
+    "courseId": "MGT104",
+    "courseName": "Master of Science",
+    "credits": 4,
+    "instructor": "Dr. Sanjay Desai",
+    "semester": "Fall 2025",
+    "image": "/book-1.png",
+    "department": "Finance"
+  },
+  {
+    "courseId": "MGT105",
+    "courseName": "Bachelor of Commerce",
+    "credits": 3,
+    "instructor": "Prof. Neha Singh",
+    "semester": "Spring 2026",
+    "image": "/book-2.png",
+    "department": "Operations"
+  },
+  {
+    "courseId": "MGT106",
+    "courseName": "Master of Commerce",
+    "credits": 2,
+    "instructor": "Dr. Mehul Shah",
+    "semester": "Fall 2025",
+    "image": "/book-3.png",
+    "department": "Business Administration"
+  },
+  {
+    "courseId": "MGT107",
+    "courseName": "Bachelor of Library Management",
+    "credits": 3,
+    "instructor": "Prof. Vandana Rao",
+    "semester": "Spring 2026",
+    "image": "/book-1.png",
+    "department": "Strategy"
+  },
+  {
+    "courseId": "MGT108",
+    "courseName": "Master of Library Management",
+    "credits": 4,
+    "instructor": "Dr. Rajeev Joshi",
+    "semester": "Fall 2025",
+    "image": "/book-2.png",
+    "department": "Finance"
+  },
+  {
+    "courseId": "MGT109",
+    "courseName": "Diploma in Library Management",
+    "credits": 3,
+    "instructor": "Dr. Alka Bedi",
+    "semester": "Spring 2026",
+    "image": "/book-3.png",
+    "department": "Human Resources"
+  },
+  {
+    "courseId": "MGT110",
+    "courseName": "Master in Social Works",
+    "credits": 3,
+    "instructor": "Prof. Kunal Arora",
+    "semester": "Fall 2025",
+    "image": "/book-1.png",
+    "department": "International Business"
+  },
+  {
+    "courseId": "MGT111",
+    "courseName": "Bachelor of Business Administrator",
+    "credits": 2,
+    "instructor": "Dr. Nisha Sood",
+    "semester": "Spring 2026",
+    "image": "/book-2.png",
+    "department": "Entrepreneurship"
+  },
+  {
+    "courseId": "MGT112",
+    "courseName": "Master of Business Administrator",
+    "credits": 3,
+    "instructor": "Prof. Isha Jain",
+    "semester": "Fall 2025",
+    "image": "/book-3.png",
+    "department": "Information Systems"
+  },
+  {
+    "courseId": "MGT113",
+    "courseName": "Bachelor of Management Studies",
+    "credits": 3,
+    "instructor": "Dr. Vikram Chauhan",
+    "semester": "Spring 2026",
+    "image": "/book-1.png",
+    "department": "Leadership"
+  },
+  {
+    "courseId": "MGT114",
+    "courseName": "BBA in Tourism & Hospital Management",
+    "credits": 4,
+    "instructor": "Prof. Ramesh Patel",
+    "semester": "Fall 2025",
+    "image": "/book-2.png",
+    "department": "Operations"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "book_id": "B001",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "category": "Fiction",
+    "bookshelf_no": "A1",
+    "assigned": true,
+    "assigned_to": "John Doe",
+    "due_date": "2025-08-20"
+  },
+  {
+    "book_id": "B002",
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Dystopian",
+    "bookshelf_no": "A2",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B003",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "category": "Classic",
+    "bookshelf_no": "A1",
+    "assigned": true,
+    "assigned_to": "Jane Smith",
+    "due_date": "2025-08-15"
+  },
+  {
+    "book_id": "B004",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "category": "Science",
+    "bookshelf_no": "B3",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B005",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "category": "Fantasy",
+    "bookshelf_no": "F1",
+    "assigned": true,
+    "assigned_to": "Emily Watson",
+    "due_date": "2025-08-22"
+  },
+  {
+    "book_id": "B006",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "category": "Romance",
+    "bookshelf_no": "C2",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B007",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "category": "Fiction",
+    "bookshelf_no": "A3",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B008",
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "category": "Psychology",
+    "bookshelf_no": "D4",
+    "assigned": true,
+    "assigned_to": "Michael Brown",
+    "due_date": "2025-08-25"
+  },
+  {
+    "book_id": "B009",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "bookshelf_no": "P1",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B010",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "category": "Philosophy",
+    "bookshelf_no": "E1",
+    "assigned": true,
+    "assigned_to": "Sophia Lee",
+    "due_date": "2025-08-30"
+  },
+  {
+    "book_id": "B011",
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "category": "History",
+    "bookshelf_no": "H1",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B012",
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "category": "Dystopian",
+    "bookshelf_no": "A2",
+    "assigned": true,
+    "assigned_to": "Liam Johnson",
+    "due_date": "2025-09-01"
+  },
+  {
+    "book_id": "B013",
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "category": "Post-Apocalyptic",
+    "bookshelf_no": "D2",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B014",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Productivity",
+    "bookshelf_no": "D3",
+    "assigned": true,
+    "assigned_to": "Chloe Kim",
+    "due_date": "2025-08-28"
+  },
+  {
+    "book_id": "B015",
+    "title": "Cracking the Coding Interview",
+    "author": "Gayle Laakmann McDowell",
+    "category": "Programming",
+    "bookshelf_no": "P2",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B016",
+    "title": "Educated",
+    "author": "Tara Westover",
+    "category": "Memoir",
+    "bookshelf_no": "M1",
+    "assigned": true,
+    "assigned_to": "Noah Davis",
+    "due_date": "2025-08-18"
+  },
+  {
+    "book_id": "B017",
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "category": "Self-Help",
+    "bookshelf_no": "S1",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B018",
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "category": "Psychology",
+    "bookshelf_no": "D5",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  },
+  {
+    "book_id": "B019",
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "category": "Business",
+    "bookshelf_no": "B1",
+    "assigned": true,
+    "assigned_to": "Olivia White",
+    "due_date": "2025-08-19"
+  },
+  {
+    "book_id": "B020",
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "category": "Entrepreneurship",
+    "bookshelf_no": "B2",
+    "assigned": false,
+    "assigned_to": null,
+    "due_date": null
+  }
+]

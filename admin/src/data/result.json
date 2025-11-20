@@ -1,0 +1,407 @@
+[
+  {
+    "student_id": "CS2023001",
+    "name": "Aarav Mehta",
+    "department": "Computer Science",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "CS501",
+        "subject_name": "Operating Systems",
+        "marks_obtained": 88
+      },
+      {
+        "subject_code": "CS502",
+        "subject_name": "Database Systems",
+        "marks_obtained": 92
+      },
+      {
+        "subject_code": "CS503",
+        "subject_name": "Computer Networks",
+        "marks_obtained": 85
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 265,
+    "percentage": 8.42,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "IT2023012",
+    "name": "Sneha Kapoor",
+    "department": "Information Technology",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "IT501",
+        "subject_name": "Web Technologies",
+        "marks_obtained": 91
+      },
+      {
+        "subject_code": "IT502",
+        "subject_name": "Cloud Computing",
+        "marks_obtained": 87
+      },
+      {
+        "subject_code": "IT503",
+        "subject_name": "Software Engineering",
+        "marks_obtained": 90
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 268,
+    "percentage": 8.32,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "ME2023020",
+    "name": "Karan Joshi",
+    "department": "Mechanical",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "ME501",
+        "subject_name": "Thermodynamics",
+        "marks_obtained": 76
+      },
+      {
+        "subject_code": "ME502",
+        "subject_name": "Fluid Mechanics",
+        "marks_obtained": 72
+      },
+      {
+        "subject_code": "ME503",
+        "subject_name": "Machine Design",
+        "marks_obtained": 68
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 216,
+    "percentage": 7.2,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "EE2023017",
+    "name": "Priya Singh",
+    "department": "Electrical",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "EE501",
+        "subject_name": "Power Systems",
+        "marks_obtained": 80
+      },
+      {
+        "subject_code": "EE502",
+        "subject_name": "Control Systems",
+        "marks_obtained": 83
+      },
+      {
+        "subject_code": "EE503",
+        "subject_name": "Electrical Machines",
+        "marks_obtained": 78
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 241,
+    "percentage": 8.2,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "CV2023009",
+    "name": "Meera Nair",
+    "department": "Civil",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "CV501",
+        "subject_name": "Structural Engineering",
+        "marks_obtained": 74
+      },
+      {
+        "subject_code": "CV502",
+        "subject_name": "Transportation Engineering",
+        "marks_obtained": 70
+      },
+      {
+        "subject_code": "CV503",
+        "subject_name": "Construction Materials",
+        "marks_obtained": 65
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 209,
+    "percentage": 7.67,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "CS2023002",
+    "name": "Dev Sharma",
+    "department": "Computer Science",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "CS501",
+        "subject_name": "Operating Systems",
+        "marks_obtained": 55
+      },
+      {
+        "subject_code": "CS502",
+        "subject_name": "Database Systems",
+        "marks_obtained": 60
+      },
+      {
+        "subject_code": "CS503",
+        "subject_name": "Computer Networks",
+        "marks_obtained": 58
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 173,
+    "percentage": 5.62,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "IT2023013",
+    "name": "Tanya Rao",
+    "department": "Information Technology",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "IT501",
+        "subject_name": "Web Technologies",
+        "marks_obtained": 92
+      },
+      {
+        "subject_code": "IT502",
+        "subject_name": "Cloud Computing",
+        "marks_obtained": 95
+      },
+      {
+        "subject_code": "IT503",
+        "subject_name": "Software Engineering",
+        "marks_obtained": 89
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 276,
+    "percentage": 9.2,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "EC2023021",
+    "name": "Rohan Verma",
+    "department": "Electronics",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "EC501",
+        "subject_name": "Digital Electronics",
+        "marks_obtained": 62
+      },
+      {
+        "subject_code": "EC502",
+        "subject_name": "Analog Circuits",
+        "marks_obtained": 64
+      },
+      {
+        "subject_code": "EC503",
+        "subject_name": "VLSI Design",
+        "marks_obtained": 60
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 186,
+    "percentage": 6.68,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "CS2023003",
+    "name": "Simran Kaur",
+    "department": "Computer Science",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "CS501",
+        "subject_name": "Operating Systems",
+        "marks_obtained": 45
+      },
+      {
+        "subject_code": "CS502",
+        "subject_name": "Database Systems",
+        "marks_obtained": 39
+      },
+      {
+        "subject_code": "CS503",
+        "subject_name": "Computer Networks",
+        "marks_obtained": 50
+      }
+    ],
+    "award_year": 2023,
+    "total_marks": 134,
+    "percentage": 6.67,
+    "result_status": "Fail"
+  },
+  {
+    "student_id": "EE2023018",
+    "name": "Ishaan Thakur",
+    "department": "Electrical",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "EE501",
+        "subject_name": "Power Systems",
+        "marks_obtained": 86
+      },
+      {
+        "subject_code": "EE502",
+        "subject_name": "Control Systems",
+        "marks_obtained": 89
+      },
+      {
+        "subject_code": "EE503",
+        "subject_name": "Electrical Machines",
+        "marks_obtained": 84
+      }
+    ],
+    "award_year": 2023,
+    "total_marks": 259,
+    "percentage": 8.23,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "CS2023004",
+    "name": "Ankit Dubey",
+    "department": "Computer Science",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "CS501",
+        "subject_name": "Operating Systems",
+        "marks_obtained": 40
+      },
+      {
+        "subject_code": "CS502",
+        "subject_name": "Database Systems",
+        "marks_obtained": 38
+      },
+      {
+        "subject_code": "CS503",
+        "subject_name": "Computer Networks",
+        "marks_obtained": 42
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 120,
+    "percentage": 5.1,
+    "result_status": "Fail"
+  },
+  {
+    "student_id": "CV2023010",
+    "name": "Neha Desai",
+    "department": "Civil",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "CV501",
+        "subject_name": "Structural Engineering",
+        "marks_obtained": 55
+      },
+      {
+        "subject_code": "CV502",
+        "subject_name": "Transportation Engineering",
+        "marks_obtained": 60
+      },
+      {
+        "subject_code": "CV503",
+        "subject_name": "Construction Materials",
+        "marks_obtained": 58
+      }
+    ],
+    "award_year": 2024,
+    "total_marks": 173,
+    "percentage": 6.67,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "CS2023005",
+    "name": "Ritika Banerjee",
+    "department": "Computer Science",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "CS501",
+        "subject_name": "Operating Systems",
+        "marks_obtained": 95
+      },
+      {
+        "subject_code": "CS502",
+        "subject_name": "Database Systems",
+        "marks_obtained": 93
+      },
+      {
+        "subject_code": "CS503",
+        "subject_name": "Computer Networks",
+        "marks_obtained": 97
+      }
+    ],
+    "award_year": 2023,
+    "total_marks": 285,
+    "percentage": 9.0,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "IT2023014",
+    "name": "Amit Patel",
+    "department": "Information Technology",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "IT501",
+        "subject_name": "Web Technologies",
+        "marks_obtained": 78
+      },
+      {
+        "subject_code": "IT502",
+        "subject_name": "Cloud Computing",
+        "marks_obtained": 80
+      },
+      {
+        "subject_code": "IT503",
+        "subject_name": "Software Engineering",
+        "marks_obtained": 75
+      }
+    ],
+    "award_year": 2023,
+    "total_marks": 233,
+    "percentage": 7.67,
+    "result_status": "Pass"
+  },
+  {
+    "student_id": "EC2023022",
+    "name": "Ravi Mishra",
+    "department": "Electronics",
+    "semester": 5,
+    "subjects": [
+      {
+        "subject_code": "EC501",
+        "subject_name": "Digital Electronics",
+        "marks_obtained": 45
+      },
+      {
+        "subject_code": "EC502",
+        "subject_name": "Analog Circuits",
+        "marks_obtained": 40
+      },
+      {
+        "subject_code": "EC503",
+        "subject_name": "VLSI Design",
+        "marks_obtained": 38
+      }
+    ],
+    "award_year": 2023,
+    "total_marks": 123,
+    "percentage": 4.8,
+    "result_status": "Fail"
+  }
+]

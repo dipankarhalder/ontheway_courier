@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Emily Carter",
+    "position": "Principal",
+    "department_or_committee": "Administration",
+    "term_start": "2022-07-01",
+    "term_end": "2027-06-30",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Prof. Michael Brown",
+    "position": "Vice Principal",
+    "department_or_committee": "Academic Affairs",
+    "term_start": "2021-01-01",
+    "term_end": "2026-12-31",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Lisa Wang",
+    "position": "Dean",
+    "department_or_committee": "Faculty of Science",
+    "term_start": "2020-08-01",
+    "term_end": "2025-07-31",
+    "status": "Active"
+  },
+  {
+    "id": 4,
+    "name": "Mr. Robert Singh",
+    "position": "Registrar",
+    "department_or_committee": "Student Records",
+    "term_start": "2019-06-15",
+    "term_end": "2024-06-14",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Anita Mehra",
+    "position": "Chairperson",
+    "department_or_committee": "Research Committee",
+    "term_start": "2023-01-01",
+    "term_end": "2026-12-31",
+    "status": "Active"
+  },
+  {
+    "id": 6,
+    "name": "Prof. James O'Connor",
+    "position": "Member",
+    "department_or_committee": "Research Committee",
+    "term_start": "2023-01-01",
+    "term_end": "2026-12-31",
+    "status": "Active"
+  },
+  {
+    "id": 7,
+    "name": "Ms. Priya Desai",
+    "position": "Coordinator",
+    "department_or_committee": "Cultural Committee",
+    "term_start": "2022-09-01",
+    "term_end": "2024-08-31",
+    "status": "Active"
+  },
+  {
+    "id": 8,
+    "name": "Mr. David Kim",
+    "position": "Member",
+    "department_or_committee": "Disciplinary Committee",
+    "term_start": "2021-03-01",
+    "term_end": "2024-02-28",
+    "status": "Active"
+  },
+  {
+    "id": 9,
+    "name": "Dr. Aisha Khan",
+    "position": "Chairperson",
+    "department_or_committee": "Examination Committee",
+    "term_start": "2020-05-01",
+    "term_end": "2025-04-30",
+    "status": "Active"
+  },
+  {
+    "id": 10,
+    "name": "Mr. Steven White",
+    "position": "Member",
+    "department_or_committee": "Admission Committee",
+    "term_start": "2022-06-01",
+    "term_end": "2025-05-31",
+    "status": "Active"
+  },
+  {
+    "id": 11,
+    "name": "Dr. Renu Sinha",
+    "position": "Chairperson",
+    "department_or_committee": "IQAC",
+    "term_start": "2021-07-01",
+    "term_end": "2024-06-30",
+    "status": "Active"
+  },
+  {
+    "id": 12,
+    "name": "Prof. Omar Aziz",
+    "position": "Member",
+    "department_or_committee": "Library Committee",
+    "term_start": "2023-04-01",
+    "term_end": "2026-03-31",
+    "status": "Active"
+  },
+  {
+    "id": 13,
+    "name": "Ms. Sophia Dsouza",
+    "position": "Member Secretary",
+    "department_or_committee": "Anti-Ragging Committee",
+    "term_start": "2022-08-01",
+    "term_end": "2025-07-31",
+    "status": "Active"
+  },
+  {
+    "id": 14,
+    "name": "Mr. Rajeev Nair",
+    "position": "Chairperson",
+    "department_or_committee": "Sports Committee",
+    "term_start": "2020-01-01",
+    "term_end": "2024-12-31",
+    "status": "Active"
+  },
+  {
+    "id": 15,
+    "name": "Dr. Megan Schultz",
+    "position": "Coordinator",
+    "department_or_committee": "Alumni Committee",
+    "term_start": "2021-10-01",
+    "term_end": "2025-09-30",
+    "status": "Active"
+  }
+]
