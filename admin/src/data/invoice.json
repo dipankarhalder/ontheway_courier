@@ -1,0 +1,134 @@
+[
+  {
+    "invoiceId": "INV001",
+    "studentId": "S001",
+    "studentName": "Aarav Mehta",
+    "course": "B.Sc Computer Science",
+    "issueDate": "2025-07-01",
+    "dueDate": "2025-07-15",
+    "amount": 55000,
+    "status": "Paid",
+    "description": "Semester 1 Tuition Fee"
+  },
+  {
+    "invoiceId": "INV002",
+    "studentId": "S002",
+    "studentName": "Isha Kapoor",
+    "course": "B.A English",
+    "issueDate": "2025-06-25",
+    "dueDate": "2025-07-10",
+    "amount": 30000,
+    "status": "Paid",
+    "description": "Semester 1 Tuition Fee"
+  },
+  {
+    "invoiceId": "INV003",
+    "studentId": "S003",
+    "studentName": "Rohan Gupta",
+    "course": "B.Com",
+    "issueDate": "2025-07-05",
+    "dueDate": "2025-07-20",
+    "amount": 45000,
+    "status": "Unpaid",
+    "description": "Semester 2 Tuition Fee"
+  },
+  {
+    "invoiceId": "INV004",
+    "studentId": "S004",
+    "studentName": "Meera Joshi",
+    "course": "B.Sc Physics",
+    "issueDate": "2025-07-03",
+    "dueDate": "2025-07-18",
+    "amount": 1000,
+    "status": "Paid",
+    "description": "Library Fine"
+  },
+  {
+    "invoiceId": "INV005",
+    "studentId": "S005",
+    "studentName": "Karan Desai",
+    "course": "B.Sc Chemistry",
+    "issueDate": "2025-07-08",
+    "dueDate": "2025-07-22",
+    "amount": 18000,
+    "status": "Paid",
+    "description": "Hostel Fee - Q1"
+  },
+  {
+    "invoiceId": "INV006",
+    "studentId": "S006",
+    "studentName": "Neha Shah",
+    "course": "B.A Psychology",
+    "issueDate": "2025-07-12",
+    "dueDate": "2025-07-27",
+    "amount": 2000,
+    "status": "Unpaid",
+    "description": "Lab Maintenance Fee"
+  },
+  {
+    "invoiceId": "INV007",
+    "studentId": "S007",
+    "studentName": "Aryan Verma",
+    "course": "B.Tech IT",
+    "issueDate": "2025-07-01",
+    "dueDate": "2025-07-15",
+    "amount": 60000,
+    "status": "Paid",
+    "description": "Semester 3 Tuition Fee"
+  },
+  {
+    "invoiceId": "INV008",
+    "studentId": "S008",
+    "studentName": "Sanya Rathore",
+    "course": "BBA",
+    "issueDate": "2025-07-10",
+    "dueDate": "2025-07-25",
+    "amount": 22000,
+    "status": "Unpaid",
+    "description": "Hostel Fee - Q2"
+  },
+  {
+    "invoiceId": "INV009",
+    "studentId": "S009",
+    "studentName": "Dev Arya",
+    "course": "B.Com",
+    "issueDate": "2025-07-02",
+    "dueDate": "2025-07-17",
+    "amount": 1200,
+    "status": "Paid",
+    "description": "Late Submission Fine"
+  },
+  {
+    "invoiceId": "INV010",
+    "studentId": "S010",
+    "studentName": "Tanya Malhotra",
+    "course": "MBA",
+    "issueDate": "2025-06-30",
+    "dueDate": "2025-07-15",
+    "amount": 75000,
+    "status": "Paid",
+    "description": "Semester Fee"
+  },
+  {
+    "invoiceId": "INV011",
+    "studentId": "S011",
+    "studentName": "Rajat Kapoor",
+    "course": "B.Tech CSE",
+    "issueDate": "2025-07-11",
+    "dueDate": "2025-07-26",
+    "amount": 35000,
+    "status": "Unpaid",
+    "description": "Semester 4 Tuition Fee"
+  },
+  {
+    "invoiceId": "INV012",
+    "studentId": "S012",
+    "studentName": "Pooja Iyer",
+    "course": "B.Sc Mathematics",
+    "issueDate": "2025-07-06",
+    "dueDate": "2025-07-20",
+    "amount": 16000,
+    "status": "Paid",
+    "description": "Hostel Rent + Maintenance"
+  }
+]

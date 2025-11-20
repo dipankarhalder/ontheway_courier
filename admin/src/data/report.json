@@ -1,0 +1,122 @@
+[
+  {
+    "reportId": "REP001",
+    "reportTitle": "Semester 1 Academic Performance",
+    "studentId": "S001",
+    "studentName": "Aarav Mehta",
+    "course": "B.Sc Computer Science",
+    "reportType": "Academic",
+    "date": "2025-07-15",
+    "status": "Completed"
+  },
+  {
+    "reportId": "REP002",
+    "reportTitle": "Attendance Report - March 2025",
+    "studentId": "S002",
+    "studentName": "Isha Kapoor",
+    "course": "B.A English",
+    "reportType": "Attendance",
+    "date": "2025-04-01",
+    "status": "Completed"
+  },
+  {
+    "reportId": "REP003",
+    "reportTitle": "Fee Payment Status",
+    "studentId": "S003",
+    "studentName": "Rohan Gupta",
+    "course": "B.Com",
+    "reportType": "Finance",
+    "date": "2025-05-10",
+    "status": "Pending"
+  },
+  {
+    "reportId": "REP004",
+    "reportTitle": "Library Usage Summary",
+    "studentId": "S004",
+    "studentName": "Meera Joshi",
+    "course": "B.Sc Physics",
+    "reportType": "Library",
+    "date": "2025-06-20",
+    "status": "Completed"
+  },
+  {
+    "reportId": "REP005",
+    "reportTitle": "Semester 2 Academic Performance",
+    "studentId": "S005",
+    "studentName": "Karan Desai",
+    "course": "B.Sc Chemistry",
+    "reportType": "Academic",
+    "date": "2025-08-01",
+    "status": "Completed"
+  },
+  {
+    "reportId": "REP006",
+    "reportTitle": "Disciplinary Action Notice",
+    "studentId": "S006",
+    "studentName": "Neha Shah",
+    "course": "B.A Psychology",
+    "reportType": "Disciplinary",
+    "date": "2025-03-15",
+    "status": "Completed"
+  },
+  {
+    "reportId": "REP007",
+    "reportTitle": "Hostel Fee Payment Report",
+    "studentId": "S007",
+    "studentName": "Aryan Verma",
+    "course": "B.Tech IT",
+    "reportType": "Finance",
+    "date": "2025-07-10",
+    "status": "Overdue"
+  },
+  {
+    "reportId": "REP008",
+    "reportTitle": "Sports Participation Certificate",
+    "studentId": "S008",
+    "studentName": "Sanya Rathore",
+    "course": "BBA",
+    "reportType": "Extra-Curricular",
+    "date": "2025-02-28",
+    "status": "Completed"
+  },
+  {
+    "reportId": "REP009",
+    "reportTitle": "Medical Leave Summary",
+    "studentId": "S009",
+    "studentName": "Dev Arya",
+    "course": "B.Com",
+    "reportType": "Health",
+    "date": "2025-06-15",
+    "status": "Completed"
+  },
+  {
+    "reportId": "REP010",
+    "reportTitle": "Internship Approval Report",
+    "studentId": "S010",
+    "studentName": "Tanya Malhotra",
+    "course": "MBA",
+    "reportType": "Internship",
+    "date": "2025-07-25",
+    "status": "Approved"
+  },
+  {
+    "reportId": "REP011",
+    "reportTitle": "Final Year Project Submission",
+    "studentId": "S011",
+    "studentName": "Rajat Kapoor",
+    "course": "B.Tech CSE",
+    "reportType": "Project",
+    "date": "2025-07-20",
+    "status": "Submitted"
+  },
+  {
+    "reportId": "REP012",
+    "reportTitle": "Scholarship Eligibility Report",
+    "studentId": "S012",
+    "studentName": "Pooja Iyer",
+    "course": "B.Sc Mathematics",
+    "reportType": "Scholarship",
+    "date": "2025-08-05",
+    "status": "Eligible"
+  }
+]

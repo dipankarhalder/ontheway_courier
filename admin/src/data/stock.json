@@ -1,0 +1,122 @@
+[
+  {
+    "itemId": "STK001",
+    "name": "A4 Printing Paper (500 sheets)",
+    "category": "Stationery",
+    "quantity": 120,
+    "unit": "pack",
+    "reorderLevel": 20,
+    "pricePerUnit": 250.0,
+    "supplier": "OfficeMate Supplies"
+  },
+  {
+    "itemId": "STK002",
+    "name": "Whiteboard Marker (Black)",
+    "category": "Stationery",
+    "quantity": 300,
+    "unit": "piece",
+    "reorderLevel": 50,
+    "pricePerUnit": 15.0,
+    "supplier": "SmartEdu Distributors"
+  },
+  {
+    "itemId": "STK003",
+    "name": "Physics Lab Kit",
+    "category": "Lab Equipment",
+    "quantity": 25,
+    "unit": "kit",
+    "reorderLevel": 10,
+    "pricePerUnit": 1200.0,
+    "supplier": "LabTech Instruments"
+  },
+  {
+    "itemId": "STK004",
+    "name": "Dell Latitude Laptops",
+    "category": "Electronics",
+    "quantity": 15,
+    "unit": "unit",
+    "reorderLevel": 5,
+    "pricePerUnit": 65000.0,
+    "supplier": "TechGear Solutions"
+  },
+  {
+    "itemId": "STK005",
+    "name": "Projector - Epson X05",
+    "category": "Electronics",
+    "quantity": 6,
+    "unit": "unit",
+    "reorderLevel": 2,
+    "pricePerUnit": 45000.0,
+    "supplier": "AVPoint India"
+  },
+  {
+    "itemId": "STK006",
+    "name": "Plastic Chairs",
+    "category": "Furniture",
+    "quantity": 100,
+    "unit": "piece",
+    "reorderLevel": 30,
+    "pricePerUnit": 450.0,
+    "supplier": "Campus Comforts"
+  },
+  {
+    "itemId": "STK007",
+    "name": "Wooden Desks",
+    "category": "Furniture",
+    "quantity": 40,
+    "unit": "piece",
+    "reorderLevel": 10,
+    "pricePerUnit": 2200.0,
+    "supplier": "Campus Comforts"
+  },
+  {
+    "itemId": "STK008",
+    "name": "Microscope - Student Model",
+    "category": "Lab Equipment",
+    "quantity": 18,
+    "unit": "unit",
+    "reorderLevel": 5,
+    "pricePerUnit": 3800.0,
+    "supplier": "BioLab Essentials"
+  },
+  {
+    "itemId": "STK009",
+    "name": "LED Tube Lights",
+    "category": "Electrical",
+    "quantity": 60,
+    "unit": "piece",
+    "reorderLevel": 10,
+    "pricePerUnit": 250.0,
+    "supplier": "BrightLite Solutions"
+  },
+  {
+    "itemId": "STK010",
+    "name": "Hand Sanitizer (500ml)",
+    "category": "Health & Safety",
+    "quantity": 75,
+    "unit": "bottle",
+    "reorderLevel": 20,
+    "pricePerUnit": 90.0,
+    "supplier": "CleanZone Enterprises"
+  },
+  {
+    "itemId": "STK011",
+    "name": "Printer Ink Cartridge - Black",
+    "category": "Stationery",
+    "quantity": 45,
+    "unit": "cartridge",
+    "reorderLevel": 10,
+    "pricePerUnit": 1200.0,
+    "supplier": "PrintWorks Pvt Ltd"
+  },
+  {
+    "itemId": "STK012",
+    "name": "Extension Boards (4 socket)",
+    "category": "Electrical",
+    "quantity": 35,
+    "unit": "piece",
+    "reorderLevel": 8,
+    "pricePerUnit": 350.0,
+    "supplier": "Electric Essentials"
+  }
+]

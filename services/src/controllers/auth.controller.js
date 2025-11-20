@@ -1,15 +1,15 @@
-const { StatusCodes } = require('http-status-codes');
-const User = require('../models/user.model');
-const { envConfig } = require('../config');
-const { msg } = require('../constant');
-const { authValidate } = require('../validation');
-const { validateFields, sendErrorResponse } = require('../utils');
+const { StatusCodes } = require("http-status-codes");
+const User = require("../models/user.model");
+const { envConfig } = require("../config");
+const { msg } = require("../constant");
+const { authValidate } = require("../validation");
+const { validateFields, sendErrorResponse } = require("../utils");
 
 /*
-* @ API - User Register
-* @ method - POST
-* @ end point - http://localhost:4001/api/v1/auth/sign-up
-*/
+ * @ API - User Register
+ * @ method - POST
+ * @ end point - http://localhost:4001/api/v1/auth/sign-up
+ */
 const userSignup = async (req, res) => {
   try {
     /* validate request body */
@@ -17,15 +17,14 @@ const userSignup = async (req, res) => {
       abortEarly: false,
     });
     if (error) {
-      return validateFields(res,
-        error.details.map((detail) => detail.message).join(', ')
+      return validateFields(
+        res,
+        error.details.map((detail) => detail.message).join(", ")
       );
     }
 
     /* find the existing user via email */
-    const existingEmail = await User.findOne({
-      email: value.email
-    });
+    const existingEmail = await User.findOne({ email: value.email });
     if (existingEmail) {
       return validateFields(res, msg.user_msg.email_already_exist);
     }
@@ -37,12 +36,10 @@ const userSignup = async (req, res) => {
       email: value.email,
       password: value.password,
       phone: value.phone,
-      role: value.role,
     });
 
     /* save the user */
     await user.save();
-
     return res.status(StatusCodes.OK).json({
       status: StatusCodes.OK,
       message: msg.user_msg.new_user_created,
@@ -53,10 +50,10 @@ const userSignup = async (req, res) => {
 };
 
 /*
-* @ API - User Login
-* @ method - POST
-* @ end point - http://localhost:4001/api/v1/auth/sign-in
-*/
+ * @ API - User Login
+ * @ method - POST
+ * @ end point - http://localhost:4001/api/v1/auth/sign-in
+ */
 const userSignin = async (req, res) => {
   try {
     /* validate request body */
@@ -64,15 +61,14 @@ const userSignin = async (req, res) => {
       abortEarly: false,
     });
     if (error) {
-      return validateFields(res,
-        error.details.map((detail) => detail.message).join(', ')
+      return validateFields(
+        res,
+        error.details.map((detail) => detail.message).join(", ")
       );
     }
 
     /* find the existing user via email */
-    const user = await User.findOne({
-      email: value.email
-    });
+    const user = await User.findOne({ email: value.email });
     if (!user) {
       return validateFields(res, msg.user_msg.exist_user_email);
     }
@@ -85,15 +81,15 @@ const userSignin = async (req, res) => {
 
     /* generated token */
     const token = user.generateAuthToken();
-    res.cookie('authToken', token, {
+    res.cookie("authToken", token, {
       httpOnly: true,
       secure: envConfig.NODEENV,
-      maxAge: envConfig.EXPTIME,
+      // maxAge: envConfig.EXPTIME,
     });
 
     return res.status(StatusCodes.OK).json({
       status: StatusCodes.OK,
-      token: token,
+      token,
       message: msg.user_msg.user_login_successfully,
     });
   } catch (error) {
@@ -102,17 +98,17 @@ const userSignin = async (req, res) => {
 };
 
 /*
-* @ API - User Logout
-* @ method - POST
-* @ end point - http://localhost:4001/api/v1/auth/sign-out
-*/
+ * @ API - User Logout
+ * @ method - POST
+ * @ end point - http://localhost:4001/api/v1/auth/sign-out
+ */
 const userSignout = async (req, res) => {
   try {
     /* sign-out and clear cookie */
-    res.clearCookie('authToken', {
+    res.clearCookie("authToken", {
       httpOnly: true,
       secure: envConfig.NODEENV,
-      sameSite: 'Strict',
+      sameSite: "Strict",
     });
 
     return res.status(StatusCodes.OK).json({

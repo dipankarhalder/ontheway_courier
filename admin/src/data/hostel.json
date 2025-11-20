@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "student_name": "Arjun Mehta",
+    "hostel_name": "Tagore Hostel",
+    "room_number": "A101",
+    "bed_number": "1",
+    "admission_date": "2023-07-01",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 2,
+    "student_name": "Fatima Noor",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B203",
+    "bed_number": "2",
+    "admission_date": "2022-08-10",
+    "leave_date": "2024-06-15",
+    "status": false,
+    "remarks": "Graduated"
+  },
+  {
+    "id": 3,
+    "student_name": "Karan Sood",
+    "hostel_name": "Nehru Hostel",
+    "room_number": "C110",
+    "bed_number": "1",
+    "admission_date": "2024-01-15",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 4,
+    "student_name": "Meera Das",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B305",
+    "bed_number": "1",
+    "admission_date": "2023-06-01",
+    "leave_date": null,
+    "status": false,
+    "remarks": "Medical leave"
+  },
+  {
+    "id": 5,
+    "student_name": "Ravi Sharma",
+    "hostel_name": "Tagore Hostel",
+    "room_number": "A204",
+    "bed_number": "2",
+    "admission_date": "2022-09-12",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 6,
+    "student_name": "Neha Kapoor",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B108",
+    "bed_number": "1",
+    "admission_date": "2023-07-20",
+    "leave_date": null,
+    "status": true,
+    "remarks": "Class Representative"
+  },
+  {
+    "id": 7,
+    "student_name": "Aman Gill",
+    "hostel_name": "Nehru Hostel",
+    "room_number": "C203",
+    "bed_number": "2",
+    "admission_date": "2024-03-05",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 8,
+    "student_name": "Sana Iqbal",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B102",
+    "bed_number": "1",
+    "admission_date": "2022-07-11",
+    "leave_date": "2023-12-20",
+    "status": false,
+    "remarks": "Transferred"
+  },
+  {
+    "id": 9,
+    "student_name": "Deepak Rao",
+    "hostel_name": "Tagore Hostel",
+    "room_number": "A305",
+    "bed_number": "2",
+    "admission_date": "2023-09-01",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 10,
+    "student_name": "Ishita Sen",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B110",
+    "bed_number": "2",
+    "admission_date": "2021-08-20",
+    "leave_date": "2024-05-30",
+    "status": false,
+    "remarks": "Graduated"
+  },
+  {
+    "id": 11,
+    "student_name": "Mohit Arora",
+    "hostel_name": "Nehru Hostel",
+    "room_number": "C104",
+    "bed_number": "1",
+    "admission_date": "2024-02-10",
+    "leave_date": null,
+    "status": true,
+    "remarks": "New Admission"
+  },
+  {
+    "id": 12,
+    "student_name": "Anjali Bhatt",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B202",
+    "bed_number": "1",
+    "admission_date": "2023-01-05",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 13,
+    "student_name": "Rohit Verma",
+    "hostel_name": "Tagore Hostel",
+    "room_number": "A103",
+    "bed_number": "2",
+    "admission_date": "2022-10-15",
+    "leave_date": null,
+    "status": false,
+    "remarks": "Internship"
+  },
+  {
+    "id": 14,
+    "student_name": "Divya Nair",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B309",
+    "bed_number": "1",
+    "admission_date": "2021-07-01",
+    "leave_date": "2024-06-10",
+    "status": false,
+    "remarks": ""
+  },
+  {
+    "id": 15,
+    "student_name": "Harsh Malik",
+    "hostel_name": "Nehru Hostel",
+    "room_number": "C206",
+    "bed_number": "1",
+    "admission_date": "2023-11-01",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 16,
+    "student_name": "Shruti Rao",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B107",
+    "bed_number": "2",
+    "admission_date": "2022-12-01",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 17,
+    "student_name": "Yash Jain",
+    "hostel_name": "Tagore Hostel",
+    "room_number": "A206",
+    "bed_number": "1",
+    "admission_date": "2023-05-15",
+    "leave_date": null,
+    "status": true,
+    "remarks": "Disciplinary warning issued"
+  },
+  {
+    "id": 18,
+    "student_name": "Nikita Roy",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B306",
+    "bed_number": "2",
+    "admission_date": "2022-04-20",
+    "leave_date": "2023-08-10",
+    "status": false,
+    "remarks": "Voluntary withdrawal"
+  },
+  {
+    "id": 19,
+    "student_name": "Kunal Thakur",
+    "hostel_name": "Nehru Hostel",
+    "room_number": "C109",
+    "bed_number": "1",
+    "admission_date": "2023-07-10",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  },
+  {
+    "id": 20,
+    "student_name": "Ritika Basu",
+    "hostel_name": "Sarojini Hostel",
+    "room_number": "B201",
+    "bed_number": "2",
+    "admission_date": "2024-01-01",
+    "leave_date": null,
+    "status": true,
+    "remarks": ""
+  }
+]

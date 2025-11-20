@@ -1,0 +1,202 @@
+[
+  {
+    "assignmentId": "A101",
+    "studentName": "Aarav Mehta",
+    "studentId": "S001",
+    "courseId": "MGT101",
+    "assignmentTitle": "Sorting Algorithms",
+    "submissionDate": "2025-08-01",
+    "status": "Submitted",
+    "grade": "A"
+  },
+  {
+    "assignmentId": "A102",
+    "studentName": "Isha Kapoor",
+    "studentId": "S002",
+    "courseId": "ART201",
+    "assignmentTitle": "Modern Art Movements",
+    "submissionDate": "2025-08-03",
+    "status": "Submitted",
+    "grade": "B+"
+  },
+  {
+    "assignmentId": "A103",
+    "studentName": "Rohan Gupta",
+    "studentId": "S003",
+    "courseId": "SCI401",
+    "assignmentTitle": "Laws of Motion",
+    "submissionDate": "2025-08-05",
+    "status": "Pending",
+    "grade": null
+  },
+  {
+    "assignmentId": "A104",
+    "studentName": "Meera Joshi",
+    "studentId": "S004",
+    "courseId": "COM302",
+    "assignmentTitle": "Balance Sheets",
+    "submissionDate": "2025-07-30",
+    "status": "Submitted",
+    "grade": "A-"
+  },
+  {
+    "assignmentId": "A105",
+    "studentName": "Karan Desai",
+    "studentId": "S005",
+    "courseId": "MGT112",
+    "assignmentTitle": "Cybersecurity Threats",
+    "submissionDate": "2025-08-02",
+    "status": "Submitted",
+    "grade": "B"
+  },
+  {
+    "assignmentId": "A106",
+    "studentName": "Neha Shah",
+    "studentId": "S006",
+    "courseId": "ART204",
+    "assignmentTitle": "Learning Theories",
+    "submissionDate": "2025-08-04",
+    "status": "Submitted",
+    "grade": "A+"
+  },
+  {
+    "assignmentId": "A107",
+    "studentName": "Aryan Verma",
+    "studentId": "S007",
+    "courseId": "BSC503",
+    "assignmentTitle": "Pollution Effects",
+    "submissionDate": "2025-08-06",
+    "status": "Pending",
+    "grade": null
+  },
+  {
+    "assignmentId": "A108",
+    "studentName": "Sanya Rathore",
+    "studentId": "S008",
+    "courseId": "COM303",
+    "assignmentTitle": "Cost Analysis",
+    "submissionDate": "2025-07-28",
+    "status": "Overdue",
+    "grade": null
+  },
+  {
+    "assignmentId": "A109",
+    "studentName": "Dev Arya",
+    "studentId": "S009",
+    "courseId": "BSC502",
+    "assignmentTitle": "Chemical Reactions",
+    "submissionDate": "2025-08-01",
+    "status": "Submitted",
+    "grade": "B+"
+  },
+  {
+    "assignmentId": "A110",
+    "studentName": "Tanya Malhotra",
+    "studentId": "S010",
+    "courseId": "MGT105",
+    "assignmentTitle": "OOP in Java",
+    "submissionDate": "2025-08-05",
+    "status": "Pending",
+    "grade": null
+  },
+  {
+    "assignmentId": "A111",
+    "studentName": "Rajat Kapoor",
+    "studentId": "S011",
+    "courseId": "MGT109",
+    "assignmentTitle": "Regression Models",
+    "submissionDate": "2025-08-03",
+    "status": "Submitted",
+    "grade": "A"
+  },
+  {
+    "assignmentId": "A112",
+    "studentName": "Pooja Iyer",
+    "studentId": "S012",
+    "courseId": "COM304",
+    "assignmentTitle": "Econometrics Models",
+    "submissionDate": "2025-08-02",
+    "status": "Submitted",
+    "grade": "B-"
+  },
+  {
+    "assignmentId": "A113",
+    "studentName": "Yash Rawat",
+    "studentId": "S013",
+    "courseId": "SCI403",
+    "assignmentTitle": "Quantum States",
+    "submissionDate": "2025-08-01",
+    "status": "Submitted",
+    "grade": "A+"
+  },
+  {
+    "assignmentId": "A114",
+    "studentName": "Simran Bedi",
+    "studentId": "S014",
+    "courseId": "MGT108",
+    "assignmentTitle": "AI Applications",
+    "submissionDate": "2025-08-04",
+    "status": "Submitted",
+    "grade": "B+"
+  },
+  {
+    "assignmentId": "A115",
+    "studentName": "Manav Yadav",
+    "studentId": "S015",
+    "courseId": "BCM601",
+    "assignmentTitle": "Economic Policies",
+    "submissionDate": "2025-08-06",
+    "status": "Pending",
+    "grade": null
+  },
+  {
+    "assignmentId": "A116",
+    "studentName": "Rhea Sood",
+    "studentId": "S016",
+    "courseId": "MGT113",
+    "assignmentTitle": "Visualizing Data",
+    "submissionDate": "2025-07-29",
+    "status": "Submitted",
+    "grade": "A"
+  },
+  {
+    "assignmentId": "A117",
+    "studentName": "Nikhil Jain",
+    "studentId": "S017",
+    "courseId": "SCI402",
+    "assignmentTitle": "Carbon Compounds",
+    "submissionDate": "2025-08-02",
+    "status": "Submitted",
+    "grade": "B"
+  },
+  {
+    "assignmentId": "A118",
+    "studentName": "Ananya Khurana",
+    "studentId": "S018",
+    "courseId": "MGT107",
+    "assignmentTitle": "Distributed File Systems",
+    "submissionDate": "2025-08-03",
+    "status": "Pending",
+    "grade": null
+  },
+  {
+    "assignmentId": "A119",
+    "studentName": "Parth Bhalla",
+    "studentId": "S019",
+    "courseId": "BCM602",
+    "assignmentTitle": "Investment Strategies",
+    "submissionDate": "2025-08-01",
+    "status": "Submitted",
+    "grade": "A-"
+  },
+  {
+    "assignmentId": "A120",
+    "studentName": "Divya Saxena",
+    "studentId": "S020",
+    "courseId": "ART202",
+    "assignmentTitle": "Shakespearean Drama",
+    "submissionDate": "2025-08-04",
+    "status": "Submitted",
+    "grade": "A+"
+  }
+]
