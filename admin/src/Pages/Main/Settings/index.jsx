@@ -23,8 +23,8 @@ export const SettingsPage = () => {
       id: item.settingId,
       name: item.name,
       description: item.description,
-      status_info: item.value ? "Active" : "In-active",
-      is_editable: item.isEditable ? "Active" : "In-active",
+      status_info: item.value,
+      is_editable: item.isEditable,
     }));
 
   const tableHeaders =
@@ -55,14 +55,14 @@ export const SettingsPage = () => {
     <AppMainLayoutCover>
       <AppTableDataInformation>
         <TableInfo
-          pageTitle={"Manage Library"}
+          pageTitle={"Manage Settings"}
           pagePath={pagePaths}
           data={settingsTableData}
-          addTextItem={"Add New Record"}
+          addTextItem={"Add Settings"}
           handleAddItems={handleAddItems}
           sortableColumns={["name", "status_info", "is_editable"]}
           viewBtn={"title"}
-          enableStatus={true}
+          enableStatus={false}
           filterableColumns={["status_info", "is_editable"]}
           visibleColumns={visibleColumns}
           onToggleColumn={(col) =>

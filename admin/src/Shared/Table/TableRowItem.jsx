@@ -86,6 +86,41 @@ export const TableRowItem = React.memo(
             );
           }
 
+          if (key === "status_info") {
+            const isBoolean = typeof item[key] === "boolean";
+
+            return (
+              <td key={key}>
+                <span
+                  className={
+                    isBoolean
+                      ? item[key]
+                        ? "app_status_actv"
+                        : "app_status_inactv"
+                      : ""
+                  }
+                >
+                  {isBoolean
+                    ? item[key]
+                      ? "Assigned"
+                      : "Available"
+                    : item[key]}
+                </span>
+              </td>
+            );
+          }
+
+          if (key === "is_editable") {
+            return (
+              <td
+                key={key}
+                className={item[key] ? "app_verify_actv" : "app_verify_inactv"}
+              >
+                {item[key] ? <GreenTick /> : ""}
+              </td>
+            );
+          }
+
           if (key === "registration") {
             return (
               <td key={key}>
