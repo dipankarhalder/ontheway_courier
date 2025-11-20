@@ -1,19 +1,16 @@
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Logo } from "../../Common/Logo";
 import { sidebarLink } from "../../../RouteLinks";
-// import { paths } from "../../../Constant";
 import {
   AppSideBar,
   AppSidebarInside,
   AppSidebarLinkCover,
-  // AddNewCandidate,/''
   SidebarItem,
   SidebarTitle,
   SidebarList,
   SidebarListItem,
   SidebarLinkStyled,
 } from "./style";
-import { Plus } from "../../../Shared/Icons";
 
 const normalizePath = (path) =>
   path?.startsWith("/") ? path : `/apps/${path}`;
@@ -29,12 +26,6 @@ export const Sidebar = () => {
     <AppSideBar>
       <AppSidebarInside>
         <Logo />
-        {/* <AddNewCandidate>
-          <Link to={paths.ADMISSION}>
-            <Plus />
-            <p>New Admission</p>
-          </Link>
-        </AddNewCandidate> */}
         <AppSidebarLinkCover>
           {sidebarLink.map((item) => {
             const sectionIsActive = item.children?.some(({ path }) => {

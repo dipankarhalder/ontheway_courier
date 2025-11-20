@@ -140,7 +140,7 @@ export const SidebarLinkStyled = styled(Link)`
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 5px 8px;
+  padding: 7px 8px;
   text-decoration: none;
   border-radius: 4px;
   ${textColor("text")};

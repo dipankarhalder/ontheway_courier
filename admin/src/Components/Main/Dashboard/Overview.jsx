@@ -7,50 +7,50 @@ export const Overview = () => {
         <li>
           <div className="app_child_inside app_collection">
             <Rupees />
-            <p>Collected Fees</p>
+            <p>Total Revenue</p>
             <div className="app_icontext">
-              <h6>Rs. 9,500,010 /-</h6>
-              <span>July 2025</span>
+              <h6>Rs. 5,500,010 /-</h6>
+              <span>Jan - Aug 2025</span>
             </div>
           </div>
         </li>
         <li>
           <div className="app_child_inside app_expense">
             <Rupees />
-            <p>Overall Expenses</p>
+            <p>Total Expenses</p>
             <div className="app_icontext">
-              <h6>Rs. 680,230 /-</h6>
-              <span>July 2025</span>
+              <h6>Rs. 460,230 /-</h6>
+              <span>Jan - Aug 2025</span>
             </div>
           </div>
         </li>
         <li>
           <div className="app_child_inside app_teacher">
             <Profile />
-            <p>Total Teaching Staff</p>
+            <p>New User</p>
             <div className="app_icontext">
-              <h6>78</h6>
-              <span>Inactive: 23</span>
+              <h6>34</h6>
+              <span>Apr - Aug 2025</span>
             </div>
           </div>
         </li>
         <li>
           <div className="app_child_inside app_non_teacher">
             <Members />
-            <p>Non-Teaching Staff</p>
+            <p>Total Rider</p>
             <div className="app_icontext">
-              <h6>1325</h6>
-              <span>Inactive: 421</span>
+              <h6>1134</h6>
+              <span>Inactive: 214</span>
             </div>
           </div>
         </li>
         <li>
           <div className="app_child_inside app_student">
             <Teams />
-            <p>Total Student</p>
+            <p>Total Customer &amp; Rider</p>
             <div className="app_icontext">
-              <h6>52,620</h6>
-              <span>Inactive: 2349</span>
+              <h6>23,620</h6>
+              <span>Inactive: 3249</span>
             </div>
           </div>
         </li>
