@@ -64,7 +64,7 @@ export const InvoicePage = () => {
         <TableInfo
           pageTitle={"Manage Invoices"}
           pagePath={pagePaths}
-          data={invoiceTableData}
+          data={[]}
           addTextItem={"Add New Notice"}
           handleAddItems={handleAddItems}
           sortableColumns={["student_name", "course", "info"]}
