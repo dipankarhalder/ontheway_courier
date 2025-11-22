@@ -1,37 +1,39 @@
-const express = require('express');
-const router = express.Router();
+/** Node modules */
+import { Router } from "express";
 
-const { routers } = require('../../constant');
-const { auth_token, upload_media } = require('../../middleware');
-const {
-  auth,
-  profile,
-  category,
-  subcategory
-} = require('../../controllers');
+/** Middlewares */
+// import { requireRefreshToken } from "@/middlewares/refreshToken";
+// import { authenticate } from "@/middlewares/authenticate";
+// import { authorize } from "@/middlewares/authorize";
+import { validate } from "../../middleware/validate.js";
+// import { upload } from "@/middlewares/uploadFile";
 
-/* authentication */
-router.post(routers.end_points.sign_up, auth.userSignup);
-router.post(routers.end_points.sign_in, auth.userSignin);
-router.post(routers.end_points.sign_out, auth.userSignout);
+/** Validation */
+import {
+  registerValidation,
+  // loginValidation,
+  // updateAccountValidation,
+  // updateRoleValidation,
+} from "../../validate/userValidate.js";
 
-/* profile */
-router.get(routers.end_points.profile_details, auth_token, profile.getProfileDetails);
-router.patch(routers.end_points.update_password, auth_token, profile.updateAdminPassword);
+/** Controllers */
+import { register } from "../../controllers/auth/register.js";
 
-/* categories */
-router.post(routers.end_points.new_category, auth_token, upload_media.single('image'), category.createCategory);
-router.get(routers.end_points.all_categories, auth_token, category.getAllCategories);
-router.get(routers.end_points.get_category, auth_token, category.getCategory);
-router.patch(routers.end_points.get_category, auth_token, category.editCategory);
-router.delete(routers.end_points.get_category, auth_token, category.deleteCategory);
+/** v1 routes */
+const v1Routes = Router();
 
-/* sub categories */
-router.post(routers.end_points.new_sub_category, auth_token, subcategory.createSubCategory);
-router.get(routers.end_points.all_sub_category, auth_token, subcategory.getAllSubCategories);
-router.get(routers.end_points.get_sub_category, auth_token, subcategory.getSubCategory);
-router.delete(routers.end_points.get_sub_category, auth_token, subcategory.deleteSubCategory);
+/** Auth */
+v1Routes.post("/auth/register", validate(registerValidation), register);
+// v1Routes.post("/auth/login", validate(loginValidation), login);
+// v1Routes.post("/auth/refresh-token", requireRefreshToken, refreshToken);
+// v1Routes.post("/auth/logout", authenticate, logout);
 
-module.exports = {
-  v1Routes: router,
-};
+/** Profile */
+// v1Routes.get("/profile/me", authenticate, account);
+// v1Routes.get("/profile/users", authenticate, authorize(["super_admin"]), listUsers);
+// v1Routes.put("/profile/update", validate(updateAccountValidation), authenticate, updateAccount);
+// v1Routes.put("/profile/role/:id", validate(updateRoleValidation), authenticate, authorize(["super_admin"]), updateRole);
+// v1Routes.post("/profile/upload", authenticate, upload.single("profileImage"), uploadImage);
+// v1Routes.get("/profile/list-image", authenticate, listUploadedImages);
+
+export { v1Routes };

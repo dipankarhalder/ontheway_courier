@@ -1,11 +1,19 @@
-const express = require('express');
+/** Node modules */
+import { Router } from "express";
 
-const { routers } = require('../constant');
-const { v1Routes } = require('./v1');
+/** Routes */
+import { v1Routes } from "./v1/index.js";
 
-const router = express.Router();
-router.use(routers.end_points.v1Base, v1Routes);
+/** Root routes */
+const rootRoutes = Router();
+rootRoutes.get("/", (req, res) => {
+  res.status(200).json({
+    message: "API is live now",
+    status: "ok",
+    version: "1.0.0",
+    timestamp: new Date().toISOString(),
+  });
+});
 
-module.exports = {
-  RootApiRouter: router,
-};
+rootRoutes.use("/v1", v1Routes);
+export { rootRoutes };
