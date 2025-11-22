@@ -1,12 +1,9 @@
-/** Node modules */
-import { JsonWebTokenError, TokenExpiredError } from "jsonwebtoken";
-
 /** Custom modules */
 import { logger } from "../../lib/logtrack.js";
 import { verifyRefreshToken, generateAccessToken } from "../../lib/tokens.js";
 
 /** Models */
-import Token from "@/models/token";
+import Token from "../../models/token.js";
 
 export const refreshToken = async (req, res) => {
   const rtoken = req.cookies.refreshToken;
@@ -31,14 +28,14 @@ export const refreshToken = async (req, res) => {
       message: "Access token generated successfully.",
     });
   } catch (error) {
-    if (error instanceof TokenExpiredError) {
+    if (error.name === "TokenExpiredError") {
       res.status(401).json({
         message: "Your session has expired. Please sign in again to continue.",
       });
       return;
     }
 
-    if (error instanceof JsonWebTokenError) {
+    if (error.name === "JsonWebTokenError") {
       res.status(401).json({
         message: "The provided token is invalid or has expired.",
       });
