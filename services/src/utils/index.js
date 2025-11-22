@@ -1,30 +1,29 @@
-const { StatusCodes } = require('http-status-codes');
-const { msg } = require('../constant');
+/** Node modules */
+import { UAParser } from "ua-parser-js";
 
-const sendErrorResponse = (res, error) => {
-  return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
-    status: StatusCodes.INTERNAL_SERVER_ERROR,
-    message: msg.app_msg.some_thing_wrong,
-    error: error.message,
-  });
+/** Generate random username */
+export const genUsername = () => {
+  const usernamePrefix = "user-";
+  const randomChars = Math.random().toString(36).slice(2);
+  const username = usernamePrefix + randomChars;
+  return username;
 };
 
-const validateFields = (res, messages) => {
-  return res.status(StatusCodes.BAD_REQUEST).json({
-    status: StatusCodes.BAD_REQUEST,
-    message: messages,
-  });
-};
+/** Generate device information */
+export const genDeviceInfo = (req, type) => {
+  const userAgent = req.headers["user-agent"] || "";
+  const parser = new UAParser(userAgent);
+  const result = parser.getResult();
 
-const notFoundItem = (res, messages) => {
-  return res.status(StatusCodes.NOT_FOUND).json({
-    status: StatusCodes.NOT_FOUND,
-    message: messages,
-  });
-};
-
-module.exports = {
-  sendErrorResponse,
-  validateFields,
-  notFoundItem,
+  const deviceInfo = {
+    ipAddress: req.ip,
+    browser: result.browser.name || "Unknown",
+    browserVersion: result.browser.version || "Unknown",
+    device: result.device.model || "Desktop",
+    deviceType: result.device.type || "computer",
+    os: result.os.name || "Unknown",
+    osVersion: result.os.version || "Unknown",
+    logType: type,
+  };
+  return deviceInfo;
 };
