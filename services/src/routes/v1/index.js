@@ -11,20 +11,21 @@ import { validate } from "../../middleware/validate.js";
 /** Validation */
 import {
   registerValidation,
-  // loginValidation,
+  loginValidation,
   // updateAccountValidation,
   // updateRoleValidation,
 } from "../../validate/userValidate.js";
 
 /** Controllers */
 import { register } from "../../controllers/auth/register.js";
+import { login } from "../../controllers/auth/login.js";
 
 /** v1 routes */
 const v1Routes = Router();
 
 /** Auth */
 v1Routes.post("/auth/register", validate(registerValidation), register);
-// v1Routes.post("/auth/login", validate(loginValidation), login);
+v1Routes.post("/auth/login", validate(loginValidation), login);
 // v1Routes.post("/auth/refresh-token", requireRefreshToken, refreshToken);
 // v1Routes.post("/auth/logout", authenticate, logout);
 
