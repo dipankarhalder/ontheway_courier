@@ -2,7 +2,7 @@
 import dotenv from "dotenv";
 
 /** Initial config */
-dotenv.config();
+dotenv.config({ quiet: true });
 
 export const config = {
   PORT: process.env.PORT || 4000,
