@@ -17,9 +17,9 @@ export default function Search() {
   return (
     <View className="flex-1 bg-gray-100">
       <View className="flex-col w-full px-5 mt-[70px]">
-        <View className="flex-row w-full justify-center items-center mb-[20px]">
+        <View className="flex-row w-full justify-between items-center mb-[20px]">
           <TouchableOpacity
-            className={`flex-row items-center border border-white rounded-[10px] gap-4 px-4 mb-0 h-[40px]`}
+            className={`flex-row items-center rounded-[10px] gap-1 px-2 mb-0 h-[40px]`}
             onPress={() => router.push(pathItem.home as any)}
           >
             <Prev color={"#000000"} />
