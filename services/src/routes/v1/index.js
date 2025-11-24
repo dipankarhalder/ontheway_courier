@@ -9,6 +9,7 @@ import { upload } from "../../middleware/uploadFile.js";
 
 /** Validation */
 import { registerValidation, loginValidation, updateAccountValidation } from "../../validate/userValidate.js";
+import { customerRegisterValidation } from "../../validate/customerValidate.js";
 
 /** Controllers */
 import { register } from "../../controllers/auth/register.js";
@@ -18,6 +19,10 @@ import { logout } from "../../controllers/auth/logout.js";
 import { details } from "../../controllers/profile/details.js";
 import { updateAccount } from "../../controllers/profile/updateAccount.js";
 import { uploadImage } from "../../controllers/profile/uploadImage.js";
+import { createCustomer } from "../../controllers/customer/createCustomer.js";
+import { loginCustomer } from "../../controllers/customer/loginCustomer.js";
+import { refreshCustomerToken } from "../../controllers/customer/refreshCustomer.js";
+import { logoutCustomer } from "../../controllers/customer/logoutCustomer.js";
 
 /** v1 routes */
 const v1Routes = Router();
@@ -32,5 +37,11 @@ v1Routes.post("/auth/logout", authenticate, logout);
 v1Routes.get("/profile/me", authenticate, details);
 v1Routes.put("/profile/update", validate(updateAccountValidation), authenticate, updateAccount);
 v1Routes.post("/profile/upload", authenticate, upload.single("profileImage"), uploadImage);
+
+/** Customer */
+v1Routes.post("/customer/create", validate(customerRegisterValidation), createCustomer);
+v1Routes.post("/customer/login", validate(loginValidation), loginCustomer);
+v1Routes.post("/customer/refresh-token", requireRefreshToken, refreshCustomerToken);
+v1Routes.post("/customer/logout", authenticate, logoutCustomer);
 
 export { v1Routes };

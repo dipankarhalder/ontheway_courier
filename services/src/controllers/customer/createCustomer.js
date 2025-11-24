@@ -5,46 +5,47 @@ import { genUsername, genDeviceInfo } from "../../utils/index.js";
 import { generateAccessToken, generateRefreshToken } from "../../lib/tokens.js";
 
 /** Models */
-import User from "../../models/user.js";
+import Customer from "../../models/customer.js";
 import Token from "../../models/token.js";
 import Device from "../../models/device.js";
 
-export const register = async (req, res) => {
+export const createCustomer = async (req, res) => {
   try {
-    const { firstName, lastName, email, password, phone } = req.body;
+    const { firstName, lastName, email, phone, password, typeUser  } = req.body;
 
     /** Check for existing email */
-    const existEmail = await User.exists({ email });
+    const existEmail = await Customer.exists({ email });
     if (existEmail) {
       res.status(400).json({
-        message: `Provided ${email} is already associated with another user.`,
+        message: `${email} is already registered.`,
       });
       return;
     }
 
     /** Create new user */
     const username = genUsername();
-    const newUser = await User.create({
+    const newCustomer = await Customer.create({
       username,
       firstName,
       lastName,
       email,
       password,
       phone,
+      typeUser
     });
 
     /** Generate access and refresh token for new user */
-    const accessToken = generateAccessToken(newUser._id, newUser.username);
-    const refreshToken = generateRefreshToken(newUser._id, newUser.username);
+    const accessToken = generateAccessToken(newCustomer._id, newCustomer.username);
+    const refreshToken = generateRefreshToken(newCustomer._id, newCustomer.username);
 
     /** Store the refresh token in database */
-    await Token.create({ token: refreshToken, userId: newUser._id });
-    logger.info("Refresh token created successfully.");
+    await Token.create({ token: refreshToken, userId: newCustomer._id });
+    logger.info("Customer refresh token created successfully.");
 
     /** Initialized and store the device information in database */
     const deviceInfo = genDeviceInfo(req, "register");
-    await Device.create({ ...deviceInfo, userId: newUser._id });
-    logger.info("Device information stored successfully.");
+    await Device.create({ ...deviceInfo, userId: newCustomer._id });
+    logger.info("Customer device information stored successfully.");
 
     /** set refresh token in cookies */
     res.cookie("refreshToken", refreshToken, {
@@ -53,18 +54,18 @@ export const register = async (req, res) => {
       sameSite: "strict",
     });
 
-    logger.info(`User registered successfully: ${newUser.email}`);
+    logger.info(`Customer registered successfully: ${newCustomer.email}`);
     res.status(201).json({
       user: {
-        username: newUser.username,
-        firstName: newUser.firstName,
-        lastName: newUser.lastName,
+        username: newCustomer.username,
+        firstName: newCustomer.firstName,
+        lastName: newCustomer.lastName,
       },
       accessToken,
-      message: "User registered successfully.",
+      message: "Customer registered successfully.",
     });
   } catch (err) {
-    logger.error(`Registration error: ${err.message}`);
+    logger.error(`Customer registration error: ${err.message}`);
 
     res.status(500).json({
       message: "Oops! Something went wrong. Please try again.",

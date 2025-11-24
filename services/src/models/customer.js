@@ -16,13 +16,13 @@ const customerSchema = new Schema(
     deliveryCount: { type: Number, default: 0 },
     rating: { type: Number, default: 0 },
     isVerified: { type: Boolean, default: false },
-    address: {
-      location: { type: String, required: true },
-      city: { type: String, required: true },
-      state: { type: String, required: true },
-      country: { type: String, required: true },
-      pincode: { type: String, required: true },
-    }
+    // address: {
+    //   location: { type: String, required: true },
+    //   city: { type: String, required: true },
+    //   state: { type: String, required: true },
+    //   country: { type: String, required: true },
+    //   pincode: { type: String, required: true },
+    // }
   },
   { timestamps: true },
 );
