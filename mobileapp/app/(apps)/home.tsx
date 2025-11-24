@@ -1,158 +1,232 @@
-import { useState, useRef } from "react";
 import {
   View,
   Text,
-  Platform,
-  TextInput,
-  Animated,
   Image,
-  ImageBackground,
+  Dimensions,
+  ScrollView,
+  TouchableOpacity,
 } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
+import { useRouter } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { mainBanner, footer_heart } from "../../constant/static";
-import { Phone } from "../../constant/icon";
-import Header from "../../components/Header";
-import FoodItemCategories from "../../components/FoodCategories";
-import Recommended from "../../components/Recommended";
-import SpclComboPack from "../../components/SpclComboPack";
-import OfferList from "../../components/OfferList";
-import FeatureProducts from "../../components/FeatureProducts";
+import {
+  searchListItems,
+  packages,
+  expt_ic_bg_black,
+  expt_ic2_bg_black,
+  expt_ic_car,
+  expt_ic_auto,
+} from "../../constant/static";
+import { SearchIc, TimerSrch } from "../../constant/icon";
+import { pathItem } from "../../constant/routes";
+
+const screenWidth = Dimensions.get("window").width;
+const itemWidth = (screenWidth - 56) / 4;
 
 export default function Home() {
-  const [searchInput, setSearchInput] = useState("");
-  const scrollY = useRef(new Animated.Value(0)).current;
-
-  const headerHeight = scrollY.interpolate({
-    inputRange: [0, 356],
-    outputRange: [530, 172],
-    extrapolate: "clamp",
-  });
-
-  const bgImageOpacity = scrollY.interpolate({
-    inputRange: [0, 300],
-    outputRange: [0.9, 0],
-    extrapolate: "clamp",
-  });
-
-  const bgColorChange = scrollY.interpolate({
-    inputRange: [0, 300],
-    outputRange: ["#000000", "#ff8d08"],
-    extrapolate: "clamp",
-  });
+  const router = useRouter();
 
   return (
     <View className="flex-1 bg-white">
-      <Animated.View
-        style={{
-          height: headerHeight,
-          width: "100%",
-          backgroundColor: "#000000",
-          borderBottomLeftRadius: 16,
-          borderBottomRightRadius: 16,
-          zIndex: 10,
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          overflow: "hidden",
-        }}
-      >
-        <SafeAreaView className="w-full flex-col rounded-[20px] z-[3]">
-          <Header />
-          <View className="flex px-5">
-            <View
-              className={`flex-row items-center border border-white bg-white rounded-[10px] gap-4 px-4 mb-0 ${
-                Platform.OS === "ios" ? "h-[44px]" : "h-[48px]"
-              }`}
+      <View className="flex">
+        <SafeAreaView
+          edges={["top"]}
+          className="w-full flex-col z-[3] bg-white py-[14px] border-b border-gray-300"
+        >
+          <View className="flex-col w-full px-5">
+            <TouchableOpacity
+              className={`flex-row w-full items-center border border-gray-100 bg-gray-100 rounded-[10px] gap-[10px] px-4 mb-0 h-[46px]`}
+              onPress={() => router.push(pathItem.search as any)}
             >
-              <Phone />
-              <TextInput
-                value={searchInput}
-                placeholder="Search here..."
-                onChangeText={(text) => setSearchInput(text)}
-                className="text-black flex-1 font-nunitosans-semibold text-[16px]"
-                placeholderTextColor="#999"
-              />
-            </View>
+              <SearchIc size={20} />
+              <Text className="text-black flex-1 font-nunitosans-bold text-[14px]">
+                Where are you going?
+              </Text>
+            </TouchableOpacity>
           </View>
         </SafeAreaView>
-        <Animated.View
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            width: "100%",
-            height: 536,
-            backgroundColor: bgColorChange,
-            zIndex: 0,
-          }}
-        />
-        <Animated.View
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            width: "100%",
-            height: 536,
-            zIndex: 1,
-            opacity: bgImageOpacity,
-          }}
-        >
-          <ImageBackground
-            source={mainBanner}
-            resizeMode="cover"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </Animated.View>
-      </Animated.View>
-      <Animated.ScrollView
+      </View>
+      <ScrollView
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingTop: 556, paddingBottom: 0 }}
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-          { useNativeDriver: false }
-        )}
+        contentContainerStyle={{ paddingTop: 0, paddingBottom: 0 }}
         scrollEventThrottle={16}
         keyboardShouldPersistTaps="handled"
       >
-        <LinearGradient
-          colors={["#ffffff", "rgba(255, 255, 255, 0)"]}
-          start={{ x: 0.5, y: 0 }}
-          end={{ x: 0.5, y: 1 }}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            height: 340,
-            zIndex: -1,
-          }}
-        />
-        <View className="flex-col px-5">
-          <FoodItemCategories />
-          <Recommended />
-          <SpclComboPack />
-          <OfferList />
-          <FeatureProducts />
+        <View className="flex-col w-full gap-3 mb-[24px] bg-blue-50 py-[16px] px-5">
+          {searchListItems.map((item) => (
+            <View key={item.id} className="flex-row gap-3 pb-2 items-start">
+              <View className="w-[14px] mt-[3px]">
+                <TimerSrch size={14} />
+              </View>
+              <View className="flex-1">
+                <Text className="text-black font-nunitosans-bold text-[13px]">
+                  {item.title}
+                </Text>
+                <Text
+                  className="text-gray-500 font-nunitosans-semibold text-[12px]"
+                  numberOfLines={1}
+                  ellipsizeMode="tail"
+                >
+                  {item.desc}
+                </Text>
+              </View>
+            </View>
+          ))}
         </View>
-        <View className="flex-col w-full bg-gray-100 px-5 pt-[100px] pb-[120px]">
-          <Text className="text-[40px] text-gray-400 font-nunitosans-extrabold leading-tight">
-            Our Foods, Our
-          </Text>
-          <Text className="text-[90px] text-gray-400 font-nunitosans-extrabold leading-tight mt-[-16px]">
-            Identity
-          </Text>
-          <View className="flex-row w-full gap-2 items-center mt-[20px]">
-            <Image source={footer_heart} className="h-[40px] w-[40px]" />
-            <Text className="text-[26px] text-gray-400 font-nunitosans-bold leading-tight">
-              thanks for searching us.
+        <View className="flex-col px-5">
+          <View className="w-full mb-3">
+            <Text className="text-[14px] text-gray-500 font-nunitosans-bold">
+              Your Daily Friends
             </Text>
           </View>
+          <View className="flex-row flex-wrap w-full gap-2 mb-10">
+            <View
+              style={{ width: itemWidth }}
+              className="flex-col items-center justify-center gap-1"
+            >
+              <View className="bg-blue-50 px-4 py-3 rounded-md w-full flex items-center justify-center">
+                <Image source={expt_ic_auto} className="h-[46px] w-[46px]" />
+              </View>
+              <Text className="text-[12px] text-gray-800 font-nunitosans-bold">
+                Auto
+              </Text>
+            </View>
+            <View
+              style={{ width: itemWidth }}
+              className="flex-col items-center justify-center gap-1"
+            >
+              <View className="bg-blue-50 px-4 py-3 rounded-md w-full flex items-center justify-center">
+                <Image
+                  source={expt_ic_bg_black}
+                  className="h-[46px] w-[46px]"
+                />
+              </View>
+              <Text className="text-[12px] text-gray-800 font-nunitosans-bold">
+                Bike
+              </Text>
+            </View>
+            <View
+              style={{ width: itemWidth }}
+              className="flex-col items-center justify-center gap-1"
+            >
+              <View className="bg-blue-50 px-4 py-3 rounded-md w-full flex items-center justify-center">
+                <Image source={expt_ic_car} className="h-[46px] w-[46px]" />
+              </View>
+              <Text className="text-[12px] text-gray-800 font-nunitosans-bold">
+                Car
+              </Text>
+            </View>
+            <View
+              style={{ width: itemWidth }}
+              className="flex-col items-center justify-center gap-1"
+            >
+              <View className="bg-blue-50 px-4 py-3 rounded-md w-full flex items-center justify-center">
+                <Image
+                  source={expt_ic2_bg_black}
+                  className="h-[46px] w-[46px]"
+                />
+              </View>
+              <Text className="text-[12px] text-gray-800 font-nunitosans-bold">
+                Premium
+              </Text>
+            </View>
+          </View>
         </View>
-      </Animated.ScrollView>
+        <View className="flex-col px-5">
+          <View className="w-full mb-3">
+            <Text className="text-[14px] text-gray-500 font-nunitosans-bold">
+              Rider near to you
+            </Text>
+          </View>
+          <View className="flex-col flex-wrap w-full gap-2 mb-10">
+            {[1, 2, 3].map((item) => (
+              <View
+                key={item}
+                className="bg-white flex-row items-center px-4 py-3 gap-4 rounded-md border border-gray-300"
+              >
+                <View>
+                  <Image
+                    source={item % 2 === 0 ? expt_ic_auto : expt_ic_bg_black}
+                    className="h-[46px] w-[46px]"
+                  />
+                </View>
+                <View className="flex-1">
+                  <Text className="text-black font-nunitosans-bold text-[14px]">
+                    KA 01-236765
+                  </Text>
+                  <Text className="text-gray-500 font-nunitosans-semibold text-[12px]">
+                    256, EN34, Asist Park, Webel More, Sector V, Pin - 200345
+                  </Text>
+                  <Text className="text-gray-800 font-nunitosans-bold text-[12px] mt-[6px]">
+                    5 min away
+                  </Text>
+                </View>
+                <View className="w-[60px] flex items-end">
+                  <TouchableOpacity
+                    className={`flex-row items-center justify-center rounded-[5px] gap-[10px] px-2 mb-0 h-[32px]`}
+                    onPress={() => router.push(pathItem.search as any)}
+                  >
+                    <Text className="text-black flex-1 font-nunitosans-bold text-[13px] text-center underline">
+                      Book
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            ))}
+          </View>
+        </View>
+        <View className="flex-col px-5">
+          <View className="w-full mb-3">
+            <Text className="text-[14px] text-gray-500 font-nunitosans-bold">
+              Delivered Packages
+            </Text>
+          </View>
+          <View className="flex-col flex-wrap w-full gap-2 mb-10">
+            {[1, 2, 3].map((item) => (
+              <View
+                key={item}
+                className="bg-blue-50 flex-row items-center px-4 py-3 gap-4 rounded-md"
+              >
+                <View>
+                  <Image source={packages} className="h-[40px] w-[40px]" />
+                </View>
+                <View className="flex-1">
+                  <Text className="text-black font-nunitosans-bold text-[14px]">
+                    Parcel - 2 wheeler
+                  </Text>
+                  <Text className="text-gray-500 font-nunitosans-semibold text-[12px] mb-[6px]">
+                    Parcel delivery upto 50 kg
+                  </Text>
+                  <View className="flex-row gap-2 items-center">
+                    <Text className="text-gray-700 font-nunitosans-bold text-[11px]">
+                      5 min away
+                    </Text>
+                    <View className="w-[4px] h-[4px] rounded-full bg-gray-300"></View>
+                    <Text className="text-gray-700 font-nunitosans-bold text-[11px]">
+                      Drop 11:27 am
+                    </Text>
+                  </View>
+                </View>
+                <View className="w-[70px] flex items-end">
+                  <Text className="text-black font-nunitosans-bold text-[14px]">
+                    ₹ 134/-
+                  </Text>
+                </View>
+              </View>
+            ))}
+          </View>
+        </View>
+        <View className="flex-col w-full bg-gray-100 px-5 pt-[100px] pb-[100px]">
+          <Text className="text-[30px] text-gray-400 font-nunitosans-extrabold italic leading-tight mb-6">
+            #onTheWay
+          </Text>
+          <Text className="text-[16px] text-gray-400 font-nunitosans-extrabold leading-tight">
+            🇮🇳 Made in India
+          </Text>
+          <Text className="text-[16px] text-gray-400 font-nunitosans-bold">
+            ♥️ Crafted in Kolkata
+          </Text>
+        </View>
+      </ScrollView>
     </View>
   );
 }

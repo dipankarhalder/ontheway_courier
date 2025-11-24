@@ -69,7 +69,7 @@ export default function Login() {
           <ImageBackground
             source={login_bg}
             resizeMode="cover"
-            className="absolute top-0 left-0 right-0 h-[52%] flex items-start justify-center px-8"
+            className="absolute top-0 left-0 right-0 h-[54%] flex items-start justify-center px-8"
           >
             <LinearGradient
               colors={["transparent", "#000000"]}
@@ -85,7 +85,7 @@ export default function Login() {
               }}
             />
           </ImageBackground>
-          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[54%] rounded-[30px] z-[3]">
+          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[50%] rounded-[30px] z-[3]">
             <View className="flex-1 items-center justify-start bg-white">
               <Text className="text-[#15253f] text-[16px] mt-2 font-nunitosans-bold w-full leading-tight">
                 Welcome back

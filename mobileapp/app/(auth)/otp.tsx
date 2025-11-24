@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import {
   Text,
   View,
@@ -15,7 +15,8 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import { login_bg } from "../../constant/static";
+import { pathItem } from "../../constant/routes";
+import { otp_bg } from "../../constant/static";
 import { useAuthStore } from "../../store/auth";
 
 const schema = yup.object().shape({
@@ -33,6 +34,7 @@ type FormInputs = {
 };
 
 export default function Otp() {
+  const router = useRouter();
   const { phone } = useLocalSearchParams();
   const login = useAuthStore((state) => state.login);
 
@@ -82,7 +84,9 @@ export default function Otp() {
         setOtpError("Incorrect OTP. Please try again.");
         return;
       }
-      login();
+
+      await login();
+      router.replace(pathItem.home as any);
     } catch (error) {
       console.error("OTP Error", error);
     } finally {
@@ -108,12 +112,12 @@ export default function Otp() {
       >
         <View className="flex-1 bg-black">
           <ImageBackground
-            source={login_bg}
+            source={otp_bg}
             resizeMode="cover"
-            className="absolute top-0 left-0 right-0 h-[52%] flex items-start justify-center px-8"
+            className="absolute top-0 left-0 right-0 h-[60%] flex items-start justify-center px-8"
           >
             <LinearGradient
-              colors={["transparent", "#000000"]}
+              colors={["transparent", "#00000049"]}
               start={{ x: 0.5, y: 0 }}
               end={{ x: 0.5, y: 1 }}
               style={{
@@ -126,7 +130,7 @@ export default function Otp() {
               }}
             />
           </ImageBackground>
-          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[60%] rounded-[30px] z-[3]">
+          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[50%] rounded-[30px] z-[3]">
             <View className="flex-1 items-center justify-start bg-white">
               <Text className="text-[#15253f] text-[24px] mt-2 font-nunitosans-bold w-full leading-tight">
                 OTP Validation
@@ -207,14 +211,6 @@ export default function Otp() {
                 </TouchableOpacity>
               </View>
             </View>
-          </View>
-          <View className="absolute bottom-[60px] left-[5%] z-[4] w-[90%] bg-green-300 px-6 py-6 rounded-lg">
-            <Text className="text-green-800 font-nunitosans-bold text-[24px] text-center mb-2">
-              Successfully login
-            </Text>
-            <Text className="font-nunitosans-medium text-green-700 text-center">
-              After login under progress
-            </Text>
           </View>
         </View>
       </KeyboardAvoidingView>

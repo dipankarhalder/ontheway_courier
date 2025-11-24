@@ -2,17 +2,21 @@ import mainAppLogo from "../assets/images/logo.png";
 import splashScreenBackground from "../assets/images/splashbg.png";
 import loginBackground from "../assets/images/login.jpg";
 import regBackground from "../assets/images/reg.jpg";
+import otpBackground from "../assets/images/otp.jpg";
+import packageImg from "../assets/images/package.png";
+import iconBg from "../assets/images/bike.png";
+import icon2Bg from "../assets/images/bike2.png";
+
+import iconAuto from "../assets/images/auto.png";
+import iconCar from "../assets/images/car.png";
 
 import sp1 from "../assets/images/sp1.png";
 import sp2 from "../assets/images/sp2.png";
 import sp3 from "../assets/images/sp3.png";
-
 import comboPackBanner1 from "../assets/images/combo1.jpeg";
 import comboPackBanner2 from "../assets/images/combo2.jpg";
 import comboPackBanner3 from "../assets/images/combo3.jpg";
-
 import heart from "../assets/images/heart.png";
-
 import banner1 from "../assets/images/banner1.jpg";
 import special from "../assets/images/special.png";
 import birayani from "../assets/images/birayani.png";
@@ -22,14 +26,12 @@ import chicken from "../assets/images/chicken.png";
 import kebab from "../assets/images/kebab.png";
 import mutton from "../assets/images/mutton.png";
 import fried from "../assets/images/fried.png";
-
 import foodItemImage1 from "../assets/images/m1.jpg";
 import foodItemImage2 from "../assets/images/m2.jpg";
 import foodItemImage3 from "../assets/images/m3.jpg";
 import foodItemImage4 from "../assets/images/m4.jpg";
 import foodItemImage5 from "../assets/images/m5.jpg";
 import foodItemImage6 from "../assets/images/m6.jpg";
-
 import splashImage1 from "../assets/images/1.jpg";
 import splashImage2 from "../assets/images/2.jpg";
 import splashImage3 from "../assets/images/3.jpg";
@@ -50,9 +52,15 @@ export const sp_banner_3 = sp3;
 export const splash_screen_background = splashScreenBackground;
 export const login_bg = loginBackground;
 export const reg_bg = regBackground;
-
+export const otp_bg = otpBackground;
+export const packages = packageImg;
 export const mainBanner = banner1;
 export const footer_heart = heart;
+export const expt_ic_bg_black = iconBg;
+export const expt_ic2_bg_black = icon2Bg;
+
+export const expt_ic_car = iconCar;
+export const expt_ic_auto = iconAuto;
 
 export const splash_banner_image_data = {
   splash_image_1: splashImage1,
@@ -67,7 +75,23 @@ export const splash_banner_image_data = {
   splash_image_10: splashImage10,
   splash_image_11: splashImage11,
 };
-
+export const searchListItems = [
+  {
+    id: 1,
+    title: "Nexus Shoping Mall, Industry layout",
+    desc: "1st B Main Rd, 8th block koramangala, Bangaluru, karnataka - 560095",
+  },
+  {
+    id: 2,
+    title: "Lalbagh Botanical Garden",
+    desc: "First main road, Phase - II, EC, Bangaluru, karnataka - 560090",
+  },
+  {
+    id: 3,
+    title: "UC City, Cathedral",
+    desc: "256, 2nd B Main Rd, 8th block koramangala, Bangaluru, karnataka - 560056",
+  },
+];
 export const slides = [
   {
     id: 1,
@@ -88,20 +112,17 @@ export const slides = [
     desc: "Keeps the emotional connection while trimming the length.",
   },
 ];
-
 export const special_banner = {
   combo_banner_1: comboPackBanner1,
   combo_banner_2: comboPackBanner2,
   combo_banner_3: comboPackBanner3,
 };
-
 export const tabs_information = [
   { name: "home", title: "Home", Icon: Home },
   { name: "bookatable", title: "Book a table", Icon: Appoint },
   { name: "orders", title: "My Orders", Icon: User },
   { name: "profile", title: "My Profile", Icon: User },
 ];
-
 export const foodCategories = [
   { id: 1, title: "Special", imgUrl: special },
   { id: 2, title: "Biryani", imgUrl: birayani },
@@ -112,7 +133,6 @@ export const foodCategories = [
   { id: 3, title: "Tandoor", imgUrl: tandoor },
   { id: 8, title: "Fried", imgUrl: fried },
 ];
-
 export const offerList = [
   {
     id: 1,
@@ -151,7 +171,6 @@ export const offerList = [
     bottomColor: "#50369e",
   },
 ];
-
 export const productList = [
   {
     id: 1,
@@ -208,7 +227,6 @@ export const productList = [
     price: "330",
   },
 ];
-
 export const productListNew = [
   {
     id: 1,
