@@ -1,0 +1,51 @@
+/** Custom modules */
+import { logger } from "../../lib/logtrack.js";
+import { verifyRefreshToken, generateAccessToken } from "../../lib/tokens.js";
+
+/** Models */
+import Token from "../../models/token.js";
+
+export const refreshCustomerToken = async (req, res) => {
+  const rtoken = req.cookies.refreshToken;
+
+  try {
+    /** verify existing token */
+    const tokenExist = await Token.exists({ token: rtoken });
+    if (!tokenExist) {
+      res.status(401).json({
+        message: "Invalid or expired refresh token. Please log in again.",
+      });
+      return;
+    }
+
+    /** verify refresh token and generate a new access token */
+    const jwtPayload = verifyRefreshToken(rtoken);
+    const accessToken = generateAccessToken(jwtPayload.userId, jwtPayload.username);
+
+    logger.info("Customer access token generated successfully.");
+    res.status(200).json({
+      accessToken,
+      message: "Customer access token generated successfully.",
+    });
+  } catch (error) {
+    if (error.name === "TokenExpiredError") {
+      res.status(401).json({
+        message: "Your session has expired. Please sign in again to continue.",
+      });
+      return;
+    }
+
+    if (error.name === "JsonWebTokenError") {
+      res.status(401).json({
+        message: "The provided token is invalid or has expired.",
+      });
+      return;
+    }
+
+    logger.error(`Failed to refresh token: ${error.message}`);
+    res.status(500).json({
+      message: "Oops! Something went wrong. Please try again.",
+      error: error.message,
+    });
+  }
+};
