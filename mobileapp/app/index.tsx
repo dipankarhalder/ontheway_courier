@@ -70,7 +70,7 @@ export default function Index() {
 
   return (
     <View className="flex-1 relative">
-      <View className="absolute top-[90px] left-0 z-[2] w-full flex items-center">
+      <View className="absolute top-[120px] left-0 z-[2] w-full flex items-center">
         <Image
           source={main_splash_screen_logo}
           className="w-[190px] h-[72px]"
@@ -97,7 +97,7 @@ export default function Index() {
                 style={{ width: 300, height: height * 0.4 }}
               />
             </View>
-            <Text className="text-black text-2xl font-nunitosans-bold text-center mt-[-40px] px-10">
+            <Text className="text-[#0784de] text-2xl font-nunitosans-bold text-center mt-[-40px] px-10">
               {slide.text}
             </Text>
             <Text className="text-black text-[16px] font-nunitosans-semibold text-center mt-[4px] px-[50px]">
