@@ -215,14 +215,14 @@ export default function Home() {
             ))}
           </View>
         </View>
-        <View className="flex-col w-full bg-gray-100 px-5 pt-[100px] pb-[100px]">
+        <View className="flex-col w-full bg-gray-100 mt-[50px] px-5 pt-[60px] pb-[100px]">
           <Text className="text-[30px] text-gray-400 font-nunitosans-extrabold italic leading-tight mb-6">
             #onTheWay
           </Text>
-          <Text className="text-[16px] text-gray-400 font-nunitosans-extrabold leading-tight">
+          <Text className="text-[15px] text-gray-400 font-nunitosans-semibold leading-tight">
             🇮🇳 Made in India
           </Text>
-          <Text className="text-[16px] text-gray-400 font-nunitosans-bold">
+          <Text className="text-[15px] text-gray-400 font-nunitosans-semibold">
             ♥️ Crafted in Kolkata
           </Text>
         </View>
