@@ -1,5 +1,4 @@
 import * as yup from "yup";
-import { useState } from "react";
 import { useRouter } from "expo-router";
 import {
   Text,
@@ -16,13 +15,12 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import { pathItem } from "../../constant/routes";
 import { reg_bg } from "../../constant/static";
-import { Eye, CloseEye, Phone, Email, User } from "../../constant/icon";
+import { Phone, Email, User } from "../../constant/icon";
 
 type RegisterFormData = {
   name: string;
   email: string;
   phone: string;
-  password: string;
 };
 
 const schema = yup.object().shape({
@@ -35,14 +33,9 @@ const schema = yup.object().shape({
     .string()
     .matches(/^[0-9]{10}$/, "Phone number must be 10 digits.")
     .required("Phone number is required."),
-  password: yup
-    .string()
-    .min(6, "Password must be at least 6 characters.")
-    .required("Password is required."),
 });
 
 export default function Register() {
-  const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
 
   const {
@@ -75,7 +68,7 @@ export default function Register() {
           <ImageBackground
             source={reg_bg}
             resizeMode="cover"
-            className="absolute top-0 left-0 right-0 h-[56%] flex items-start justify-center px-8"
+            className="absolute top-0 left-0 right-0 h-[54%] flex items-start justify-center px-8"
           >
             <LinearGradient
               colors={["transparent", "#000000"]}
@@ -91,12 +84,12 @@ export default function Register() {
               }}
             />
           </ImageBackground>
-          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[60%] rounded-[30px] z-[3]">
+          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[54%] rounded-[30px] z-[3]">
             <View className="flex-1 items-center justify-start bg-white">
               <Text className="text-[#15253f] text-[16px] mt-2 font-nunitosans-bold w-full leading-tight">
                 Hey there!
               </Text>
-              <Text className="text-[#ff8d08] w-full text-[24px] mt-1 mb-3 font-nunitosans-bold leading-tight">
+              <Text className="text-[#0784de] w-full text-[24px] mt-1 mb-3 font-nunitosans-bold leading-tight">
                 Create your account
               </Text>
               <Controller
@@ -186,39 +179,6 @@ export default function Register() {
                   {errors.phone.message}
                 </Text>
               )}
-              <Controller
-                control={control}
-                name="password"
-                render={({ field: { onChange, value } }) => (
-                  <View
-                    className={`flex-row items-center border ${
-                      errors.password ? "border-red-500" : "border-gray-300"
-                    } rounded-[10px] gap-4 px-4 mt-4 ${
-                      Platform.OS === "ios" ? "h-[46px]" : "h-[50px]"
-                    }`}
-                  >
-                    <TouchableOpacity
-                      onPress={() => setShowPassword(!showPassword)}
-                    >
-                      {showPassword ? <CloseEye /> : <Eye />}
-                    </TouchableOpacity>
-                    <TextInput
-                      placeholder="Password"
-                      secureTextEntry={!showPassword}
-                      autoCapitalize="none"
-                      value={value}
-                      onChangeText={onChange}
-                      className="flex-1 text-black font-nunitosans-semibold text-[16px]"
-                      placeholderTextColor="#999"
-                    />
-                  </View>
-                )}
-              />
-              {errors.password && (
-                <Text className="text-red-500 text-sm mt-1 w-full">
-                  {errors.password.message}
-                </Text>
-              )}
               <View className="absolute bottom-[110px] w-full px-[50px]">
                 <TouchableOpacity
                   onPress={handleSubmit(onSubmit)}
@@ -246,7 +206,7 @@ export default function Register() {
                 <TouchableOpacity
                   onPress={() => router.push(pathItem.login as any)}
                 >
-                  <Text className="text-[#ff8d08] text-md underline font-nunitosans-bold">
+                  <Text className="text-[#0784de] text-md underline font-nunitosans-bold">
                     Sign in
                   </Text>
                 </TouchableOpacity>
